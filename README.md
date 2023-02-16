@@ -1,29 +1,41 @@
-# README #
+# daw-project
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This template should help get you started developing with Vue 3 in Vite.
 
-### What is this repository for? ###
+## Recommended IDE Setup
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-### How do I get set up? ###
+## Customize configuration
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-### Contribution guidelines ###
+## Project Setup
 
-* Writing tests
-* Code review
-* Other guidelines
+```sh
+npm install
+```
 
-### Who do I talk to? ###
+### Compile and Hot-Reload for Development
 
-* Repo owner or admin
-* Other community or team contact
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Run Unit Tests with [Vitest](https://vitest.dev/)
+
+```sh
+npm run test:unit
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
