@@ -85,7 +85,21 @@ form {
   input[type="submit"] {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #333;
-    color: #fff;
+    background-color: #7AA874;
+    color: #F6F1F1;
     border: none;
   }
+
+  input[type="submit"]:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #146C94;
+    color: #F6F1F1;
+    border: none;
+  }
+/*
+  Azul oscuro ((#146C94): 60%
+Blanco (#F6F1F1): 30%
+Azul claro (#19A7CE): 10%
+Verde oscuro (#7AA874): Para botones y complementos.
+/
