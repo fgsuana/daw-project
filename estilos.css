@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	color: #000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navcontrol{
+    background-color: #146c94;
+}
+
+.logonav{
+    width: 150px;
+    height: 90px;
+}
+
+.bannerimg{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url(img/banner2.jpg);
+}
+
+.bannerimg p{
+    color: white;
+}
+
+.trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+.trabajo {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    flex-basis: 30%;
+}
+
+#hero-image {
+    background-color: #000;
+    width: 80%;
+    border: 1px solid;
+    margin: 0 auto;
+    height: 350px;
+    background-image: url();
+}
+
+.legalfooter {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7AA874;
+    color: #F6F1F1;
+    border: none;
+  }
+
+  input[type="submit"]:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #146C94;
+    color: #F6F1F1;
+    border: none;
+  }
+/*
+  Azul oscuro ((#146C94): 60%
+Blanco (#F6F1F1): 30%
+Azul claro (#19A7CE): 10%
+Verde oscuro (#7AA874): Para botones y complementos.
+/
