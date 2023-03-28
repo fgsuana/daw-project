@@ -64,9 +64,8 @@ footer {
 }
 
 #hero-image {
-    background-color: #000;
+    background-color: #6c6c6c75;
     width: 80%;
-    border: 1px solid;
     margin: 0 auto;
     height: 350px;
     background-image: url();
