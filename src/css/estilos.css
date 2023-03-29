@@ -34,7 +34,7 @@ footer {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 50%),rgba(0, 0, 0, 50%)) ,url("src/img/banner2.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 50%),rgba(0, 0, 0, 50%)) ,url("../img/banner2.jpg");
 }
 
 .bannerimg p{
@@ -105,7 +105,7 @@ Verde oscuro (#7AA874): Para botones y complementos.
 /* Inicio Login */
 
 .principal{
-    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url('src/img/bg-login.jpg');
+    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url('../img/bg-login.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center center;

@@ -5,8 +5,8 @@
   "main": "scripts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:css": "npx stylelint \"**/*.css\"",
-    "precommit": "npm run lint:css"
+    "stylelint": "stylelint src/css",
+    "stylelint:fix": "npm run stylelint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/fgsuana/daw-project#readme",
   "devDependencies": {
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "stylelint": "^15.3.0",
     "stylelint-config-standard": "^31.0.0"
   },
