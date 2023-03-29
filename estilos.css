@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	color: #000;
+    color: #000;
 }
 
 body {
@@ -34,13 +34,7 @@ footer {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-    )
-    ,url(img/banner2.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 50%),rgba(0, 0, 0, 50%)) ,url("src/img/banner2.jpg");
 }
 
 .bannerimg p{
@@ -69,7 +63,6 @@ footer {
     width: 80%;
     margin: 0 auto;
     height: 350px;
-    background-image: url();
 }
 
 .legalfooter {
@@ -78,29 +71,30 @@ footer {
 
 form {
     margin-bottom: 20px;
-  }
+}
   
-  input[type="text"] {
+input[type="text"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-  }
+}
   
-  input[type="submit"] {
+input[type="submit"] {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #7AA874;
     color: #F6F1F1;
     border: none;
-  }
+}
 
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #146C94;
     color: #F6F1F1;
     border: none;
-  }
+}
+
 /*
   Azul oscuro ((#146C94): 60%
 Blanco (#F6F1F1): 30%
@@ -108,9 +102,10 @@ Azul claro (#19A7CE): 10%
 Verde oscuro (#7AA874): Para botones y complementos.
 */
 
-/*Inicio Login*/
+/* Inicio Login */
+
 .principal{
-    background: linear-gradient(to right, rgba(20, 108, 148, 0.9), rgba(25, 167, 206, 0.9)), url('img/bg-login.jpg');
+    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url('src/img/bg-login.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -119,7 +114,7 @@ Verde oscuro (#7AA874): Para botones y complementos.
 .principal .color{
     background-color: #7AA874;
     border-radius: 30px;
-    padding: 11px 50px 11px 50px;
+    padding: 11px 50px;
 }
 
 .principal .color:hover{
@@ -127,11 +122,11 @@ Verde oscuro (#7AA874): Para botones y complementos.
     color: white;
 }
   
-.principal h2,h4,p{
+.principal h2,h4{
     color: white;
 }
 
-.principal .bloque2 h2,h4,p{
+.principal .bloque2 h2,h4, .bloque2 p {
     color: black;
     font-weight: bold;
 }
