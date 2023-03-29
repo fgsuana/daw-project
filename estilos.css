@@ -29,6 +29,7 @@ footer {
 }
 
 .bannerimg{
+    margin-top: 100px;
     height: 50vh;
     background-size: cover;
     background-position: center center;
@@ -105,4 +106,37 @@ form {
 Blanco (#F6F1F1): 30%
 Azul claro (#19A7CE): 10%
 Verde oscuro (#7AA874): Para botones y complementos.
-/
+*/
+
+/*Inicio Login*/
+.principal{
+    background: linear-gradient(to right, rgba(20, 108, 148, 0.9), rgba(25, 167, 206, 0.9)), url('img/bg-login.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.principal .color{
+    background-color: #7AA874;
+    border-radius: 30px;
+    padding: 11px 50px 11px 50px;
+}
+
+.principal .color:hover{
+    background-color: #19A7CE;
+    color: white;
+}
+  
+.principal h2,h4,p{
+    color: white;
+}
+
+.principal .bloque2 h2,h4,p{
+    color: black;
+    font-weight: bold;
+}
+
+.principal .bloque2 .color:hover{
+    background-color: #146C94;
+    color: white;
+}
