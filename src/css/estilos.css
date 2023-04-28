@@ -95,12 +95,7 @@ input[type="submit"]:hover {
     border: none;
 }
 
-/*
-  Azul oscuro ((#146C94): 60%
-Blanco (#F6F1F1): 30%
-Azul claro (#19A7CE): 10%
-Verde oscuro (#7AA874): Para botones y complementos.
-*/
+
 
 /* Inicio Login */
 
@@ -135,3 +130,144 @@ Verde oscuro (#7AA874): Para botones y complementos.
     background-color: #146C94;
     color: white;
 }
+
+/* Fin Login */
+
+/*
+  Azul oscuro ((#146C94): 60%
+Blanco (#F6F1F1): 30%
+Azul claro (#19A7CE): 10%
+Verde oscuro (#7AA874): Para botones y complementos.
+*/
+
+/* Inicio Registro */
+
+.mitad{
+    height: 100vh;
+}
+
+.color1{
+    background-color: #7AA874;
+}
+
+.iconoregistro1 i{
+    font-size: 40px;
+    margin-top: 40px;
+    color: #F6F1F1;
+}
+
+.iconoregistro2 i{
+    font-size: 270px;
+    color: #F6F1F1;
+    margin-top: 80px;
+}
+
+.principalregistro .textoregistro ,p{
+    color: #F6F1F1;
+}
+
+.textoregistro h2{
+    margin-top: 150px;
+}
+
+.color2{
+    background-color: #146C94;
+}
+
+.botonInicio{
+    background-color: #19A7CE;
+    border-top-left-radius: 40px; 
+    border-bottom-left-radius: 40px; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+    border: 0.5px solid black; 
+    padding: 10px;
+}
+
+.botonInicio:hover{
+    background-color: #146c94;
+    color: #F6F1F1;
+}
+
+.botonRegistro{
+    background-color: #7AA874;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+    border: 0.5px solid black; 
+    padding: 10px
+}
+
+.botonRegistro:hover{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.content-regis{
+    margin-top: 200px;
+    margin-left: 100px;
+    color: #F6F1F1;
+}
+
+.content-regis label{
+    color: #F6F1F1;
+}
+
+.body-registro{
+    overflow-x: hidden;
+}
+
+
+.body-registro .form-control {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    background-color: #146C94;
+    width: 450px;
+    color: #F6F1F1;
+}
+  
+
+.body-registro .form-control::placeholder {
+    color: #F6F1F1;
+    opacity: 0.7;
+    text-align: left;
+}
+
+
+.body-registro .form-control:focus {
+    box-shadow: none; /* Elimina la sombra del input cuando está enfocado */
+}
+
+.body-registro .form-control:focus::placeholder {
+    color: transparent;
+}
+
+.botonacepreg{
+    background-color: #7AA874;
+    border: 0.5px solid black; 
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.botonacepreg:hover{
+    border: 0.5px solid black; 
+    background-color: #146C94;
+    color: white;
+}
+
+#politicas {
+    transform: scale(1.5); /* aumenta el tamaño del checkbox al doble */
+  }
+  
+#politicas + a {
+    color: white; /* cambia el color del texto de la etiqueta "a" a blanco */
+}
+
+
+.form-check-input:checked {
+    background-color: #7AA874;
+}
+
+
