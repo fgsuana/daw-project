@@ -10,7 +10,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM perfil";
+$sql = "SELECT * FROM proyecto";
 $result = $conn->query($sql);
 $perfiles = array();
 

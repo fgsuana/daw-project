@@ -1,22 +1,28 @@
-const crearBaseDeDatos = () => {
-  const xhr = new XMLHttpRequest();
+import { getProfiles, getProjects } from './api.js';
 
-  xhr.open('GET', 'backend/crear_bd.php', true);
-  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+let profiles = [];
+let projects = [];
 
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-      if (xhr.status === 200) {
-        console.log(xhr.responseText);
-      } else {
-        console.error('Error en la petición');
-      }
+window.addEventListener('load', () => {
+  createDatabase();
+});
+
+const createDatabase = () => {
+  fetch('backend/create_database.php', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
     }
-  };
-
-  xhr.send();
+  })
+  .then(response => {
+    getData();
+  })
+  .catch(error => {
+    console.error(error);
+  });
 };
 
-window.onload = () => {
-  crearBaseDeDatos();
-};
+const getData = async () => {
+  profiles = await getProfiles();
+  projects = await getProjects();
+}
