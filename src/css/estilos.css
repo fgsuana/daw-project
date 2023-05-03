@@ -162,11 +162,11 @@ Verde oscuro (#7AA874): Para botones y complementos.
     margin-top: 80px;
 }
 
-.principalregistro .textoregistro ,p{
+.principalregistro .textoregistro, .principalregistro p{
     color: #F6F1F1;
 }
 
-.textoregistro h2{
+.principalregistro .textoregistro h2{
     margin-top: 150px;
 }
 
@@ -174,32 +174,26 @@ Verde oscuro (#7AA874): Para botones y complementos.
     background-color: #146C94;
 }
 
-.botonInicio{
+.boton-inicio{
     background-color: #19A7CE;
-    border-top-left-radius: 40px; 
-    border-bottom-left-radius: 40px; 
-    border-top-right-radius: 0; 
-    border-bottom-right-radius: 0; 
+    border-radius: 40px 0 0 40px;
     border: 0.5px solid black; 
     padding: 10px;
 }
 
-.botonInicio:hover{
+.boton-inicio:hover{
     background-color: #146c94;
     color: #F6F1F1;
 }
 
-.botonRegistro{
+.boton-registro{
     background-color: #7AA874;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px; 
-    border-top-left-radius: 0; 
-    border-bottom-left-radius: 0; 
+    border-radius: 40px 0 0 40px;
     border: 0.5px solid black; 
     padding: 10px
 }
 
-.botonRegistro:hover{
+.boton-registro:hover{
     background-color: #146C94;
     color: #F6F1F1;
 }
