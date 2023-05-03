@@ -271,3 +271,106 @@ Verde oscuro (#7AA874): Para botones y complementos.
 }
 
 
+/* Inicio Cookies */
+
+.cookiesbanner{
+    background-color: #146C94;
+}
+
+.aceptarcookies{
+    background-color: #7AA874;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+:hover.aceptarcookies{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.masinfocookies{
+    background-color: #19A7CE;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+:hover.masinfocookies{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.modal-title {
+    text-align: center;
+    color: black;
+    margin: auto;
+  }
+  
+  
+  .modal-body p {
+    color: black;
+  }
+
+
+.botoncerrar{
+    background-color: #146C94;
+    padding: 2%;
+    border-radius: 10px;
+    color: #F6F1F1;
+    border: none;
+  }
+
+:hover.botoncerrar{
+    background-color: #19A7CE;
+    padding: 2%;
+    border-radius: 10px;
+    color: #000;
+    border: none;
+}
+
+.colorspan{
+    color: #F6F1F1;
+}
+
+/* Final Cookies */
+
+/* Inicio pagina publicar proyecto */
+
+.bodypubproyecto{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../img/bg-pubproyecto.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.colorwhite{
+    color: #F6F1F1;
+}
+
+.botonenviar{
+    background-color: #7AA874;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+:hover.botonenviar{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.inputformproyecto input, .inputformproyecto select, .inputformproyecto textarea {
+    background-color: #146C94;
+    color: #F6F1F1;
+  }
+
+.inputformproyecto label{
+    font-size: 1.5em;
+}
+  
+/* Final pagina publicar proyecto */
