@@ -16,20 +16,22 @@ function hideCookieBanner() {
 }
 
 // Función para leer el valor de una cookie
-function getCookie(name) {
-  const nameEQ = `${name}'='`;
-  const ca = document.cookie.split(';');
-  for (let i = 0; i < ca.length; i += 1) {
-    let c = ca[i];
-    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-  }
-  return null;
+function getCookies() {
+  const cookies = {};
+  const cookieStrings = document.cookie.split(';');
+  cookieStrings.forEach((cookieString) => {
+    const [name, value] = cookieString.split('=');
+    const cookieName = name.trim();
+    const cookieValue = decodeURIComponent(value.trim());
+    cookies[cookieName] = cookieValue;
+  });
+  return cookies;
 }
 
 // Verifica si la cookie existe al cargar la página
 window.onload = function () {
-  const accepted = getCookie('cookie_accepted');
+  const cookies = getCookies();
+  const accepted = cookies.cookie_accepted;
   if (accepted === 'true') {
     hideCookieBanner();
   }
