@@ -28,6 +28,10 @@ footer {
     text-align: center;
 }
 
+main.mainbox {
+    margin-top: 5%;
+}
+
 .bannerimg{
     margin-top: 100px;
     height: 50vh;
