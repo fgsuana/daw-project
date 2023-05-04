@@ -1,9 +1,5 @@
 <?php
-
-$servername = "localhost";
-$username = "root1";
-$password = "rootroot";
-$dbname = "devMatch";
+require_once 'config.php';
 
 // Crea conexión
 $conn = new mysqli($servername, $username, $password);
