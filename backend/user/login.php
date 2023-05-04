@@ -9,16 +9,28 @@ if ($conn->connect_error) {
 }
 
 $data = json_decode(file_get_contents('php://input'), true);
-$username = $data['username'];
+$email = $data['email'];
 $password = $data['password'];
 
-$sql = "SELECT * FROM usuario WHERE correo_electronico = '$username' AND password = '$password';";
+$sql = "SELECT * FROM usuario WHERE correo_electronico = '$email' AND password = '$password';";
 $result = $conn->query($sql);
 
 if ($result->num_rows === 1) {
-  echo 'success';
-} 
+  $row = $result->fetch_assoc();
+  $name = $row['nombre_usuario'];
+  $response = [
+    'success' => true,
+    'message' => 'Login successful',
+    'name' => $name,
+  ];
+} else {
+  $response = [
+    'success' => false,
+    'message' => 'Invalid email or password',
+  ];
+}
 
+echo json_encode($response);
 $conn->close();
 
 ?>

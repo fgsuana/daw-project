@@ -48,7 +48,7 @@ export const createProject = async (projectName, projectDescription, id) => {
   }
 };
 
-export const login = async (username, password) => {
+export const login = async (email, password) => {
   try {
     const response = await fetch('../backend/user/login.php', {
       method: 'POST',
@@ -56,13 +56,14 @@ export const login = async (username, password) => {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
-        username,
+        email,
         password,
       }),
     });
-    const result = await response.text();
-    if (result === 'success') {
+    const { success, name } = JSON.parse(await response.text());
+    if (success) {
       localStorage.setItem('isLogged', 'true');
+      localStorage.setItem('userName', name);
       window.location.href = '../index.html';
     } else {
       console.log('error');
