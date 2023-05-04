@@ -50,7 +50,7 @@ export const createProject = async (projectName, projectDescription, id) => {
 
 export const login = async (username, password) => {
   try {
-    const response = await fetch('backend/project/create_project.php', {
+    const response = await fetch('../backend/user/login.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -62,7 +62,8 @@ export const login = async (username, password) => {
     });
     const result = await response.text();
     if (result === 'success') {
-      window.location.href = 'ruta/a/tu/pagina-de-inicio.html';
+      localStorage.setItem('isLogged', 'true');
+      window.location.href = '../index.html';
     } else {
       console.log('error');
     }

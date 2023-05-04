@@ -8,17 +8,16 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+$data = json_decode(file_get_contents('php://input'), true);
+$username = $data['username'];
+$password = $data['password'];
 
-$sql = "SELECT * FROM usuario WHERE nombre_usuario = '$username' AND contrasena = '$password'";
+$sql = "SELECT * FROM usuario WHERE correo_electronico = '$username' AND password = '$password';";
 $result = $conn->query($sql);
 
 if ($result->num_rows === 1) {
-echo 'success';
-} else {
-echo 'failure';
-}
+  echo 'success';
+} 
 
 $conn->close();
 

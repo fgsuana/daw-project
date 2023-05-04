@@ -26,6 +26,7 @@ $sql = "CREATE TABLE IF NOT EXISTS usuario (
   nombre_usuario VARCHAR(50) NOT NULL,
   apellidos_usuario VARCHAR(50),
   correo_electronico VARCHAR(50),
+  password VARCHAR(50),
   telefono VARCHAR(20)
 )";
 if ($conn->query($sql) === TRUE) {
@@ -111,14 +112,14 @@ $result = $conn->query($sql);
 
 if ($result->num_rows == 0) {
   // Creacion de usuarios
-  $sql = "INSERT INTO usuario (nombre_usuario, apellidos_usuario, correo_electronico, telefono)
+  $sql = "INSERT INTO usuario (nombre_usuario, apellidos_usuario, correo_electronico, telefono, password)
     VALUES 
-    ('Juan', 'Pérez', 'juan@gmail.com', '555-1234'),
-    ('Ana', 'García', 'ana@gmail.com', '555-5678'),
-    ('Pedro', 'López', 'pedro@gmail.com', '555-9012'),
-    ('María', 'Fernández', 'maria@gmail.com', '555-3456'),
-    ('Carlos', 'Gutiérrez', 'carlos@gmail.com', '555-7890'),
-    ('Sofía', 'Martínez', 'sofia@gmail.com', '555-2345');";
+    ('Juan', 'Pérez', 'juan@gmail.com', '555-1234', '123456'),
+    ('Ana', 'García', 'ana@gmail.com', '555-5678', '123456'),
+    ('Pedro', 'López', 'pedro@gmail.com', '555-9012', '123456'),
+    ('María', 'Fernández', 'maria@gmail.com', '555-3456', '123456'),
+    ('Carlos', 'Gutiérrez', 'carlos@gmail.com', '555-7890', '123456'),
+    ('Sofía', 'Martínez', 'sofia@gmail.com', '555-2345', '123456');";
   if (mysqli_query($conn, $sql) === TRUE) {
     echo "Registros insertados correctamente en la tabla de usuario";
   } else {

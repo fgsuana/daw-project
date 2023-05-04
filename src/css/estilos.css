@@ -95,7 +95,9 @@ input[type="submit"]:hover {
     border: none;
 }
 
-
+#publish-project {
+    display: none;
+}
 
 /* Inicio Login */
 

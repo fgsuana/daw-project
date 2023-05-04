@@ -3,6 +3,8 @@ import { getProfiles, getProjects } from './api.js';
 let profiles = [];
 let projects = [];
 
+// const isLogged = false;
+
 const doSomething = () => {
   console.log(profiles);
   console.log(projects);
