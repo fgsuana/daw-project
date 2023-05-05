@@ -89,12 +89,12 @@ if ($conn->query($sql) === TRUE) {
   echo "Error al crear la tabla proyecto_perfil: " . $conn->error;
 }
 
-// Crea tabla intermedia usuario-proyecto
+// Crea tabla intermedia usuario_proyecto
 $sql = "CREATE TABLE IF NOT EXISTS usuario_proyecto (
   id_usuario_proyecto INT PRIMARY KEY AUTO_INCREMENT,
-  id_proyecto INT,
-  id_usuario INT,
-  tipo_usuario ENUM('posible', 'candidato'),
+  id_proyecto INT NOT NULL,
+  id_usuario INT NOT NULL,
+  tipo_usuario ENUM('chosen', 'candidate') NOT NULL,
   FOREIGN KEY (id_proyecto) REFERENCES proyecto(id_proyecto),
   FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
 )";
@@ -179,7 +179,7 @@ if ($result->num_rows == 0) {
     echo "Error al insertar registros en la tabla de usuario_perfil: " . $conn->error;
   }
 
-  // Creacion de usuario-perfil
+  // Creacion de proyecto_perfil
   $sql = "INSERT INTO proyecto_perfil (id_proyecto, id_perfil)
     VALUES 
     ('1', '3'), ('1', '4'), ('1', '5'), ('1', '9'),
@@ -193,6 +193,17 @@ if ($result->num_rows == 0) {
     echo "Registros insertados correctamente en la tabla de proyecto_perfil";
   } else {
     echo "Error al insertar registros en la tabla de proyecto_perfil: " . $conn->error;
+  }
+
+    // Creacion de usuario_proyecto
+    $sql = "INSERT INTO usuario_proyecto (id_proyecto, id_usuario, tipo_usuario)
+    VALUES 
+    ('1', '5', 'candidate') , ('1', '6', 'chosen');";
+  
+  if (mysqli_query($conn, $sql) === TRUE) {
+    echo "Registros insertados correctamente en la tabla de usuario_proyecto";
+  } else {
+    echo "Error al insertar registros en la tabla de usuario_proyecto: " . $conn->error;
   }
 }
 
