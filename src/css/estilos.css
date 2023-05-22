@@ -371,23 +371,25 @@ Verde oscuro (#7AA874): Para botones y complementos.
 
 
 @media (max-width: 500px) {
-
     .trabajos {
-    display: block;
-    width: 100%;
-}
-
-.trabajo {
-margin: 0% 5%;
-}
-
-
-#hero-image{
-height:50%;
-}
+        display: block;
+        width: 100%;
+    }
     
-}
+    .trabajo {
+        margin: 8% 0%;
+    }
     
+    
+    #hero-image{
+    height:50%;
+    }
+
+    .mainbox {
+        width:100%;
+    }
+  }
+
 
   
 /* Final pagina publicar proyecto */
