@@ -220,6 +220,9 @@ Verde oscuro (#7AA874): Para botones y complementos.
     color: #F6F1F1;
 }
   
+.trabajo.ingred {
+    background-image: url(https://www.sbccollege.ca/wp-content/uploads/2020/10/Oct-14-network-administration-courses.jpg);
+}
 
 .body-registro .form-control::placeholder {
     color: #F6F1F1;

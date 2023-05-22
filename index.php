@@ -32,24 +32,15 @@
         <section class="trabajos">
 
         </section>
-        <!-- <h2>¿Quieres trabajar cerca de casa?</h2>
-        <section class="trabajos poblacion">
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-        </section> -->
 
         <h2>¿En qué rama te gustaría participar?</h2>
         <section class="trabajos rama">
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
-            <div class="trabajo"></div>
+            <div class="trabajo dessoft"></div>
+            <div class="trabajo ingred"></div>
+            <div class="trabajo seginf"></div>
+            <div class="trabajo adbd"></div>
+            <div class="trabajo andat"></div>
+            <div class="trabajo adsist"></div>
         </section>
     
         <h3>Entérate de las últimas novedades del sector IT en nuestro blog</h3>
