@@ -420,7 +420,10 @@ input[type="text"] {
     margin-top: 4%;
 }
 
-    
+    i.fa-brands {
+    width: 20%;
+    font-size: 25px;
+}
     
   }
 
