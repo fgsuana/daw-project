@@ -397,6 +397,14 @@ Verde oscuro (#7AA874): Para botones y complementos.
     margin: 5% auto;
     border: 1px solid #ccc;
 }
+    
+    
+    input[type="submit"] {
+    margin: 0 auto;
+    display: block;
+}
+    
+    
   }
 
 
