@@ -374,6 +374,12 @@ i.fa-brands {
     margin: 2%;
 }
 
+.legalfooter span {
+margin-left:2%;
+}
+
+
+
 @media (max-width: 500px) {
     .trabajos {
         display: block;
