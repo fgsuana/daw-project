@@ -24,10 +24,6 @@ body {
     margin: 0 auto;
 }
 
-footer {
-    text-align: center;
-}
-
 main.mainbox {
     margin-top: 8%;
 }
@@ -382,7 +378,6 @@ footer {
     text-align: center;
     padding: 2%;
 }
-
 
 .trabajodescrp {
     font-size: 12px;

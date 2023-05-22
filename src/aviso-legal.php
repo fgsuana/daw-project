@@ -11,59 +11,7 @@
 </head>
 
 <body>
-    <header>
-        <!-- Inicio Navbar-->
-
-        <nav class="navbar navbar-expand-xl navbar navcontrol fixed-top">
-            <div class="container-fluid">
-                <!-- Logo -->
-                <a href="#"><img class="logonav ms-5" alt="Dev Match" src="./img/logo.png"></a>
-
-                <!-- Boton para ver menu en formato movil -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Elementos del menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item mx-5">
-                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Inicio</a>
-                        </li>
-                        <li id="publish-project" class="nav-item mx-5">
-                            <a class="nav-link text-white" href="#galeria"><i class="fa-solid fa-folder" style="color: #ffffff;"></i> Publicar proyecto</a>
-                        </li>
-                        <!-- <li class="nav-item mx-5">
-                            <a class="nav-link text-white" href="#sobrenosotros"><i class="fa-solid fa-folder"  ></i> Acceder a ofertas de trabajo</a>
-                        </li> -->
-                        <li class="nav-item mx-5">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li id="login-text" class="nav-item mx-5" >
-                            <a class="nav-link text-white" href="./login.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Login</a>
-                        </li>
-                        <li id="user-name-text" class="nav-item mx-5">
-                            <a class="nav-link text-white" ><i class="fa-solid fa-user" style="color: #ffffff;"></i> Hola <span id="user-name"></span></a>
-                        </li>
-                        <li id="logout-text" class="nav-item mx-5" onclick="logout()">
-                            <a class="nav-link text-white" ><i class="fa-solid fa-user" style="color: #ffffff;"></i> Logout</a>
-                        </li>
-                        <li class="nav-item mx-5">
-                            <a class="nav-link text-white" href="./registro.html"><i class="fa-solid fa-user-pen" style="color: #ffffff;"></i> Registro</a>
-                        </li>
-                </div>
-
-            </div>
-        </nav>
-
-        <!-- Fin Navbar -->
-    </header>
+    <?php include 'header.php'; ?>
 
     <main class="mainbox">
         <h1>Aviso legal</h1>
@@ -86,9 +34,9 @@
         <div class="social-icons"><i class="fa-brands fa-facebook" style="color: #000000;"></i> Facebook - <i class="fa-brands fa-instagram" style="color: #000000;"></i> Instagram - <i class="fa-brands fa-youtube" style="color: #000000;"></i> Youtube - <i class="fa-brands fa-linkedin" style="color: #000000;"></i> Linkedin</div>
         <div class="legalfooter">
             <span>2023 Proyecto</span>
-            <span><a href="./aviso-legal.html">Aviso legal</a></span>
-            <span><a href="./politica-cookies.html">Política de cookies</a></span>
-            <span><a href="./politica-privacidad.html">Política de privacidad</a></span>
+            <span><a href="./aviso-legal.php">Aviso legal</a></span>
+            <span><a href="./politica-cookies.php">Política de cookies</a></span>
+            <span><a href="./politica-privacidad.php">Política de privacidad</a></span>
         </div>
     </footer>
 
