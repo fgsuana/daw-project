@@ -379,7 +379,20 @@ margin-left:2%;
 }
 
 footer {
+    text-align: center;
     padding: 2%;
+}
+
+
+.trabajodescrp {
+    font-size: 12px;
+}
+
+.trabajotitle {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 3%;
+    text-align: center;
 }
 
 @media (max-width: 500px) {
