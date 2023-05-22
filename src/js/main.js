@@ -8,10 +8,11 @@ const checkLogging = () => {
 
 const buildRoles = async (id) => {
   const profiles = await getProfilesByProjectId(id);
+  const buttton = checkLogging() ? '<button>Unirse</button>' : '';
 
   return profiles.map((profile) => {
     return `<div class="profile-row">${profile.nombre_perfil}</div> 
-    <button>Unirse</button>`;
+    ${buttton}`;
   }).join('');
 };
 
@@ -21,7 +22,7 @@ const renderProjects = async () => {
 
   const projectsHTML = await Promise.all(projects.map(async (project) => {
     const projectId = project.id_proyecto;
-    const rolesHTML = checkLogging() ? await buildRoles(projectId) : '';
+    const rolesHTML = await buildRoles(projectId);
     
     return `<div class="trabajo">
       <div class="trabajotitle">${project.nombre_proyecto}</div>
