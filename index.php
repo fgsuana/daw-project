@@ -87,7 +87,11 @@
     </div>
 </div>
 
-  
+
+<button class="fas fa-arrow-up" onclick="goToTop()" id="myButton" title="Ir arriba"></button>
+<script>
+
+</script>
 <!-- Final Cookies -->
 
     <script src="src/js/scripts.js"></script>

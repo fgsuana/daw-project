@@ -1,6 +1,6 @@
-export const getProfiles = async () => {
+export const getProfiles = async (url = 'backend') => {
   try {
-    const response = await fetch('backend/profile/get_perfiles.php', {
+    const response = await fetch(`${url}/profile/get_perfiles.php`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

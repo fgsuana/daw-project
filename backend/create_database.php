@@ -152,15 +152,7 @@ if ($result->num_rows == 0) {
     ('Diseñador/a UX/UI'),
     ('Especialista en SEO'),
     ('Especialista en Marketing Digital'),
-    ('Especialista en Análisis de Datos'),
-    ('Especialista en Seguridad Informática'),
-    ('Especialista en Integración y Despliegue Continuo (CI/CD)'),
-    ('Especialista en Infraestructura de Servidores'),
-    ('Especialista en Arquitectura de Sistemas'),
-    ('Especialista en Automatización de Pruebas y QA'),
-    ('Especialista en Gestión de Proyectos Ágiles'),
-    ('Desarrollador Android'),
-    ('Desarrollador IOS');";
+    ('Especialista en Análisis de Datos');";
   
   if (mysqli_query($conn, $sql) === TRUE) {
     echo "Registros insertados correctamente en la tabla de perfil";
