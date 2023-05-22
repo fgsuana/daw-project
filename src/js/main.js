@@ -31,9 +31,11 @@ const renderProjects = (projects) => {
     proyectoDiv.classList.add('trabajo');
     
     const nombreProyecto = document.createElement('div');
+    nombreProyecto.classList.add('trabajotitle');
     nombreProyecto.innerText = project.nombre_proyecto;
     
     const descripcionProyecto = document.createElement('div');
+    descripcionProyecto.classList.add('trabajodescrp');
     descripcionProyecto.innerText = project.descripcion_proyecto;
     
     proyectoDiv.appendChild(nombreProyecto);
