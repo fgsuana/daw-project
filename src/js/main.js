@@ -3,17 +3,47 @@ import { getProfiles, getProjects } from './api.js';
 let profiles = [];
 let projects = [];
 
+
+
 const doSomething = () => {
   console.log(profiles);
   console.log(projects);
 };
 
+const contenedorTrabajos = document.querySelector('.trabajos');
+
+
+
 const getData = async () => {
-  profiles = await getProfiles();
+  //profiles = await getProfiles();
   projects = await getProjects();
   // TODO: cambiar nombre cuando se pinte
+  renderProjects(projects);
   doSomething();
 };
+
+
+//Prueba joel
+
+const renderProjects = (projects) => {
+  projects.forEach(project => {
+    const proyectoDiv = document.createElement('div');
+    proyectoDiv.classList.add('trabajo');
+    
+    const nombreProyecto = document.createElement('div');
+    nombreProyecto.innerText = project.nombre_proyecto;
+    
+    const descripcionProyecto = document.createElement('div');
+    descripcionProyecto.innerText = project.descripcion_proyecto;
+    
+    proyectoDiv.appendChild(nombreProyecto);
+    proyectoDiv.appendChild(descripcionProyecto);
+    contenedorTrabajos.appendChild(proyectoDiv);
+  });
+};
+
+
+
 
 const createDatabase = () => {
   fetch('backend/create_database.php', {
