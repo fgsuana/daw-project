@@ -1,35 +1,40 @@
-import { getProfiles, getProjects } from './api.js';
+import { getProjects , getProfilesByProjectId } from './api.js';
 
-let profiles = [];
-let projects = [];
 
-// Prueba joel
+const checkLogging = () => {
+  const isLogged = localStorage.getItem('isLogged');
+  return isLogged === 'true';
+};
 
-const renderProjects = () => {
+const buildRoles = async (id) => {
+  const profiles = await getProfilesByProjectId(id);
+
+  return profiles.map((profile) => {
+    return `<div class="profile-row">${profile.nombre_perfil}</div> 
+    <button>Unirse</button>`;
+  }).join('');
+};
+
+const renderProjects = async () => {
   const contenedorTrabajos = document.querySelector('.trabajos');
-  projects.forEach((project) => {
-    const proyectoDiv = document.createElement('div');
-    proyectoDiv.classList.add('trabajo');
+  const projects = await getProjects();
 
-    const nombreProyecto = document.createElement('div');
-    nombreProyecto.classList.add('trabajotitle');
-    nombreProyecto.innerText = project.nombre_proyecto;
+  const projectsHTML = await Promise.all(projects.map(async (project) => {
+    const projectId = project.id_proyecto;
+    const rolesHTML = checkLogging() ? await buildRoles(projectId) : '';
+    
+    return `<div class="trabajo">
+      <div class="trabajotitle">${project.nombre_proyecto}</div>
+      <div class="trabajodescrp">${project.descripcion_proyecto}</div>
+      <div class="profiles">${rolesHTML}</div>
+    </div>`;
+  }));
 
-    const descripcionProyecto = document.createElement('div');
-    descripcionProyecto.classList.add('trabajodescrp');
-    descripcionProyecto.innerText = project.descripcion_proyecto;
-
-    proyectoDiv.appendChild(nombreProyecto);
-    proyectoDiv.appendChild(descripcionProyecto);
-    contenedorTrabajos.appendChild(proyectoDiv);
-  });
+  contenedorTrabajos.innerHTML = projectsHTML.join('');
 };
 
 const getData = async () => {
-  profiles = await getProfiles();
-  projects = await getProjects();
   renderProjects();
-  console.log(profiles);
 };
 
 const createDatabase = () => {

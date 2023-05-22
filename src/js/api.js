@@ -73,3 +73,21 @@ export const login = async (email, password) => {
     return error;
   }
 };
+
+export const getProfilesByProjectId = async (id) => {
+  try {
+    const response = await fetch('./backend/profile/get_profiles_by_project_id.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        id
+      }),
+    });
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
