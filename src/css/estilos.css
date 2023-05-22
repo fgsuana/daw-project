@@ -69,6 +69,39 @@ main.mainbox {
     text-align: center;
 }
 
+footer{
+    background-color: #146C94;
+    color: #F6F1F1;
+
+}
+
+footer i, span{
+    color: #F6F1F1;
+    
+}
+
+footer i{
+    color: #F6F1F1;
+    cursor: pointer;
+    
+}
+
+footer i:hover{
+    color: #19A7CE;
+    transform: scale(1.4); /* Escala el elemento al 120% */
+}
+
+
+footer a{
+    color: #F6F1F1;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #19A7CE;
+}
+
+
 form {
     margin-bottom: 20px;
 }

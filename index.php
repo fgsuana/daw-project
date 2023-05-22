@@ -48,7 +48,7 @@
     </main>
 
     <footer>
-        <div class="social-icons"><i class="fa-brands fa-facebook" style="color: #000000;"></i> <i class="fa-brands fa-instagram" style="color: #000000;"></i> <i class="fa-brands fa-youtube" style="color: #000000;"></i> <i class="fa-brands fa-linkedin" style="color: #000000;"></i> </div>
+        <div class="social-icons"><i class="ejemplo fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-linkedin"></i> </div>
         <div class="legalfooter">
             <span>2023 Proyecto</span>
             <span><a href="./src/aviso-legal.php">Aviso legal</a></span>
