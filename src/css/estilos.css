@@ -378,7 +378,9 @@ i.fa-brands {
 margin-left:2%;
 }
 
-
+footer {
+    padding: 2%;
+}
 
 @media (max-width: 500px) {
     .trabajos {
