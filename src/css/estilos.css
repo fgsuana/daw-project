@@ -407,6 +407,21 @@ input[type="text"] {
 }
     
     
+    
+.legalfooter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.legalfooter span {
+    display: block;
+    margin-top: 4%;
+}
+
+    
+    
   }
 
 
