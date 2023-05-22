@@ -388,6 +388,15 @@ Verde oscuro (#7AA874): Para botones y complementos.
     .mainbox {
         width:100%;
     }
+    
+    
+    input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    margin: 5% auto;
+    border: 1px solid #ccc;
+}
   }
 
 
