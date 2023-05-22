@@ -369,6 +369,10 @@ Verde oscuro (#7AA874): Para botones y complementos.
     font-size: 1.5em;
 }
 
+i.fa-brands {
+    font-size: 25px;
+    margin: 2%;
+}
 
 @media (max-width: 500px) {
     .trabajos {
