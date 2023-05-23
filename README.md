@@ -1,5 +1,7 @@
+# Proyecto grupo 11 DAW
 
-#Al descargar proyecto - Ejecutar npm i
-#Iniciar XAMPP o WAMPP y activar Apache y MySQL
-#En fichero config.php - Cambiar usuario a root y password en blanco
-#Cambiar puerto en config.php
+
+1. Al descargar proyecto - Ejecutar npm i
+2. Iniciar XAMPP o WAMPP y activar Apache y MySQL
+3. En fichero config.php - Cambiar usuario a root y password en blanco
+4. Cambiar puerto en config.php
