@@ -71,7 +71,7 @@
 
 
     <footer>
-        <div class="social-icons"><i class="ejemplo fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-linkedin"></i> </div>
+        <div class="social-icons"><a href="https://www.facebook.com/devmatchweb"><i class="ejemplo fa-brands fa-facebook"></i></a> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-linkedin"></i> </div>
         <div class="legalfooter">
             <span>2023 Proyecto</span>
             <span><a href="./src/aviso-legal.php">Aviso legal</a></span>
