@@ -160,7 +160,9 @@ span.iconoinput {
     padding: 2%;
 }
 
-
+.imgfooter {
+    width: 80%;
+}
 
 
 #hero-image {
@@ -641,8 +643,93 @@ footer {
     .trabajo {
         margin: 8% 0%;
     }
+
+    .social-icons {
+        margin-top: 7%;
+    }
+
+    .bannerimg {
+        margin-top: 130px; 
+    }
     
-    
+    .steps {
+        display: block;
+    }
+
+
+
+    .triangle::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 26px 30px 14px 30px;
+        border-color: #146C94 transparent transparent transparent;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
+    }
+
+    .iconoregistro2 i {
+        font-size: 100px;
+        color: #F6F1F1;
+        margin-top:20px;
+    }
+
+    .principalregistro .textoregistro h2 {
+        margin-top: 0px;
+    }
+
+    .mitad {
+        height: auto;
+        padding: 5%;
+    }
+
+    .text-end {
+        text-align: center!important;
+        margin-bottom: 10%!important;
+    }
+
+    .boton-inicio {
+        background-color: #19A7CE;
+        border-radius: 40px 0 0 40px;
+        border: none;
+        padding: 10px;
+    }
+
+    .boton-registro {
+        background-color: #146C94;
+        border-radius: 0 40px 40px 0;
+        border: none;
+        padding: 10px;
+        color: #F6F1F1;
+    }
+
+    button.boton-inicio.d-inline-block {
+        color: #fff;
+        font-weight: bold;
+        padding: 5%;
+    }
+
+    button.me-3.boton-registro.d-inline-block {
+        color: #fff;
+        font-weight: bold;
+        padding: 5%;
+    }
+
+    .content-regis {
+        margin: 5% 2% 2% 4%;
+        color: #F6F1F1;
+        text-align: center;
+    }
+
+    .body-registro .form-control {
+width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    }
+
     #hero-image{
     height:50%;
     }
