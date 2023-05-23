@@ -359,9 +359,9 @@ Verde oscuro (#7AA874): Para botones y complementos.
     color: #F6F1F1;
 }
 
-.iconoregistro2 i{
+.iconoregistro2 i {
     font-size: 270px;
-    color: #F6F1F1;
+    color: #146c94;
     margin-top: 80px;
 }
 
@@ -369,9 +369,14 @@ Verde oscuro (#7AA874): Para botones y complementos.
     color: #F6F1F1;
 }
 
-.principalregistro .textoregistro h2{
-    margin-top: 150px;
+.principalregistro .textoregistro h2 {
+    color:#000;
 }
+
+.principalregistro .textoregistro, .principalregistro p {
+    color: #000;
+}
+
 
 .color2{
     background-color: #7AA874;
