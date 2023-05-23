@@ -282,10 +282,31 @@ Verde oscuro (#7AA874): Para botones y complementos.
     color: #F6F1F1;
 }
   
-.trabajo.ingred {
-    background-image: url("https://www.sbccollege.ca/wp-content/uploads/2020/10/Oct-14-network-administration-courses.jpg");
+.trabajo.dessoft {
+    background-image: url(https://cdn.techtitute.com/portal-blog/Metodologias-agiles-para-el-desarrollo-de-software-Scrum-scaled.jpg);
+    background-size: cover;
 }
 
+
+.trabajo.seginf {
+    background-image: url(https://tarroba.net/wp-content/uploads/2022/11/Dia-Internacional-de-la-Seguridad-Informatica-900x444.jpg);
+    background-size: cover;
+}
+
+.trabajo.adbd {
+    background-image: url(https://www.nextu.com/blog/wp-content/uploads/sites/4/2019/09/bases-de-datos-nosql.png);
+    background-size: cover;
+}
+
+.trabajo.andat {
+    background-image: url(https://www.nunsys.com/wp-content/uploads/2021/07/shutterstock_230958076-759x500-1.jpg);
+    background-size: cover;
+}
+
+.trabajo.adsist {
+    background-image: url(https://ednon.com/wp-content/uploads/2020/01/soporte-ednon.jpeg);
+    background-size: cover;
+}
 .body-registro .form-control::placeholder {
     color: #F6F1F1;
     opacity: 0.7;
