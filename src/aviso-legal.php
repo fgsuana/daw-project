@@ -30,20 +30,4 @@
 	<p>Estos términos y condiciones se regirán e interpretarán de acuerdo con las leyes de [inserta el país o región donde está registrada la plataforma de empleo para programadores]. Cualquier controversia relacionada con este sitio web se someterá a la jurisdicción exclusiva de los tribunales de [inserta la ciudad o región donde está registrada la plataforma de empleo para programadores].</p>
     </main>
 
-    <footer>
-        <div class="social-icons"><i class="fa-brands fa-facebook" style="color: #000000;"></i> Facebook - <i class="fa-brands fa-instagram" style="color: #000000;"></i> Instagram - <i class="fa-brands fa-youtube" style="color: #000000;"></i> Youtube - <i class="fa-brands fa-linkedin" style="color: #000000;"></i> Linkedin</div>
-        <div class="legalfooter">
-            <span>2023 Proyecto</span>
-            <span><a href="./aviso-legal.php">Aviso legal</a></span>
-            <span><a href="./politica-cookies.php">Política de cookies</a></span>
-            <span><a href="./politica-privacidad.php">Política de privacidad</a></span>
-        </div>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>
+    <?php include_once './footer.php'; ?>
