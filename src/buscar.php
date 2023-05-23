@@ -1,3 +1,11 @@
+<?php
+    // Verificar si se ha enviado una consulta
+    if (isset($_GET['buscadortrabajo'])) {
+        // Obtener la consulta del formulario
+        $consulta = $_GET['buscadortrabajo'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,14 +15,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Resultados de búsqueda</title>
+    <title>Resultados de la búsqueda: <?php echo $consulta; ?></title>
 </head>
 <body>
     <?php include 'header.php'; ?>
     <!-- Inicio banner --><section class="spikes">
     <div class="bannerimg">
-    <h2 class="h2subtitlemain">Más oportunidades laborales, mejores condiciones</h3>
-    <p class="subtitlemain">Conviértete en el profesional IT que tanto deseas</p>
+    <h2 class="h2subtitlemain">¿No te convence el resultado de la búsqueda?</h3>
+    <p class="subtitlemain">Prueba otra vez</p>
         <div class="d-flex h-100 align-items-center justify-content-center">
             <div id="hero-image">
                 <form method="get" action="./src/buscar.php" class="buscadorhome">
@@ -81,8 +89,12 @@
 </script>
 <!-- Final Cookies -->
 
-    <script src="src/js/scripts.js"></script>
-    <script type="module" src="src/js/main.js"></script>
+<?php
+$directorioPrincipal = $_SERVER['DOCUMENT_ROOT'];
+?>
+
+<script src="<?php echo $directorioPrincipal; ?>/js/scripts.js"></script>
+<script type="module" src="<?php echo $directorioPrincipal; ?>/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
         crossorigin="anonymous"></script>
