@@ -1,4 +1,4 @@
-import { getProfiles } from './api.js';
+import { getProfiles, createUser } from './api.js';
 let profiles = [];
 
 // Función para pintar los perfiles en la pantalla
@@ -39,3 +39,20 @@ const getData = async () => {
   profiles = await getProfiles('../backend');
   renderProfiles();
 };
+
+const register = async() => {
+  const name = document.getElementById('name');
+  const lastName = document.getElementById('lastName');
+  const email = document.getElementById('email');
+  const telephone = document.getElementById('telephone');
+  const password = document.getElementById('password');
+  const {idUser} = await createUser({
+    name, lastName, email, telephone, password
+  });
+  const checkboxes = [...document.querySelectorAll('.valorinputperfil:checked')];
+
+  const values = checkboxes.map(checkbox => checkbox.value);
+
+  debugger
+}
+window.register = register;

@@ -36,19 +36,19 @@
                 <div class="text-start">
                     <div class="content-regis">
                         <label for="nombre">NOMBRE COMPLETO</label>
-                        <input type="text" class="form-control text-start" placeholder="Introduce tu nombre">
+                        <input id="name" type="text" class="form-control text-start" placeholder="Introduce tu nombre">
 
                         <label class="mt-5" for="apellidos">Apellidos</label>
-                        <input type="text" class="form-control text-start" placeholder="Introduce tus apellidos">
+                        <input id="lastName" type="text" class="form-control text-start" placeholder="Introduce tus apellidos">
 
                         <label class="mt-5" for="nombre">CONTRASEÑA</label>
-                        <input type="password" class="form-control text-start" placeholder="*********">
+                        <input id="password" type="password" class="form-control text-start" placeholder="*********">
 
                         <label class="mt-5" for="nombre">E-MAIL</label>
-                        <input type="email" class="form-control text-start" placeholder="Introduce tu correo electrónico">
+                        <input id="email" type="email" class="form-control text-start" placeholder="Introduce tu correo electrónico">
                         
                         <label class="mt-5" for="nombre">TELÉFONO</label>
-                        <input type="tel" class="form-control text-start" placeholder="Introduce tu número de teléfono">
+                        <input id="telephone" type="tel" class="form-control text-start" placeholder="Introduce tu número de teléfono">
 
                         <div class="mt-5" id="checkbox-container"></div>
 
@@ -58,7 +58,7 @@
                         </label>
                           
                         <div>
-                        <button type="submit" class="btn botonacepreg mt-5">Regístrame</button>
+                        <button type="submit" class="btn botonacepreg mt-5" onclick="register()">Regístrame</button>
                         </div>
                     </div>
                 </div>

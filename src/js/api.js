@@ -91,3 +91,48 @@ export const getProfilesByProjectId = async (id) => {
     return error;
   }
 };
+
+export const createUser = async (user) => {
+  try {
+    const response = await fetch('../backend/user/create_user.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(user),
+    });
+    
+    if (!response.ok) {
+      throw new Error('Error al insertar el usuario');
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+export const addProfileToUser = async (idUsuario, idPerfil) => {
+  try {
+    const response = await fetch('../backend/user/add_profile_to_user.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        idUsuario,
+        idPerfil,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Error al insertar los perfiles de usuario');
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
