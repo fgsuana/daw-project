@@ -95,8 +95,12 @@ span.mainhomejobsubtitle {
 .profiles button {
     padding: 2%;
     margin: 2%;
+    background: #7AA874;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
 }
-
 .bannerimg p{
     color: #000;
 }
