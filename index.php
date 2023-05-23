@@ -14,20 +14,23 @@
 <body>
 
     <?php include 'src/header.php'; ?>
-    <!-- Inicio banner -->
+    <!-- Inicio banner --><section class="spikes">
     <div class="bannerimg">
+    <h2 class="h2subtitlemain">Más oportunidades laborales, mejores condiciones</h3>
+    <p class="subtitlemain">Conviértete en el profesional IT que tanto deseas</p>
         <div class="d-flex h-100 align-items-center justify-content-center">
             <div id="hero-image">
-                <form method="get" action="buscar.php">
+                <form method="get" action="buscar.php" class="buscadorhome">
                     <input type="text" name="buscadortrabajo" placeholder="Busca el proyecto de tus sueños...">
                     <input type="submit" value="Buscar proyecto">
                 </form>
             </div>
         </div>
-    </div>
+    </div></section>
     <!-- Fin banner -->
 
     <main class="mainbox">
+
         <h2>Últimos proyectos publicados</h2>
         <section class="trabajos">
 
@@ -35,16 +38,16 @@
 
         <h2>¿En qué rama te gustaría participar?</h2>
         <section class="trabajos rama">
-            <div class="trabajo dessoft"></div>
-            <div class="trabajo ingred"></div>
-            <div class="trabajo seginf"></div>
-            <div class="trabajo adbd"></div>
-            <div class="trabajo andat"></div>
-            <div class="trabajo adsist"></div>
+            <div class="trabajo dessoft"><div class="titlerama"><h3>Desarollo de software</h3></div></div>
+            <div class="trabajo ingred"><div class="titlerama"><h3>Ingeniería de redes</h3></div></div>
+            <div class="trabajo seginf"><div class="titlerama"><h3>Seguridad informática</h3></div></div>
+            <div class="trabajo adbd"><div class="titlerama"><h3>Administración de BD</h3></div></div>
+            <div class="trabajo andat"><div class="titlerama"><h3>Análisis de datos</h3></div></div>
+            <div class="trabajo adsist"><div class="titlerama"><h3>Administrador de sistemas</h3></div></div>
         </section>
     
         <h3>Entérate de las últimas novedades del sector IT en nuestro blog</h3>
-        
+         
     </main>
 
     <footer>
