@@ -7,10 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Contacto</title>
+    <title>Resultados de búsqueda</title>
 </head>
 <body>
     <?php include 'header.php'; ?>
+
+    <main class="mainbox">
 <?php
     // Verificar si se ha enviado una consulta
     if (isset($_GET['buscadortrabajo'])) {
@@ -32,3 +34,45 @@
         echo "<p>Resultado 3</p>";
     }
     ?>
+
+
+
+<h2>¿Te podría interesar algún proyecto?</h2>
+        <section class="trabajos rama">
+            <div class="trabajo dessoft"><div class="titlerama"><h3>Desarollo de software</h3></div></div>
+            <div class="trabajo ingred"><div class="titlerama"><h3>Ingeniería de redes</h3></div></div>
+            <div class="trabajo seginf"><div class="titlerama"><h3>Seguridad informática</h3></div></div>
+            <div class="trabajo adbd"><div class="titlerama"><h3>Administración de BD</h3></div></div>
+            <div class="trabajo andat"><div class="titlerama"><h3>Análisis de datos</h3></div></div>
+            <div class="trabajo adsist"><div class="titlerama"><h3>Administrador de sistemas</h3></div></div>
+        </section>
+
+        </main>
+
+<footer>
+        <div class="social-icons"><a href="https://www.facebook.com/devmatchweb"><i class="ejemplo fa-brands fa-facebook"></i></a> <i class="fa-brands fa-instagram"></i> <a href="https://www.youtube.com/@Devmatch-DesarolloWeb-sz2uj"><i class="fa-brands fa-youtube"></i></a> <a href="https://www.linkedin.com/company/devmatchweb/?original_referer="><i class="fa-brands fa-linkedin"></i></a> </div>
+        <div class="legalfooter">
+            <span>2023 Proyecto</span>
+            <span><a href="./src/aviso-legal.php">Aviso legal</a></span>
+            <span><a href="./src/politica-cookies.php">Política de cookies</a></span>
+            <span><a href="./src/politica-privacidad.php">Política de privacidad</a></span>
+        </div>
+
+    </footer>
+
+<!-- Inicio Cookies -->
+
+<button class="fas fa-arrow-up" onclick="goToTop()" id="myButton" title="Ir arriba"></button>
+<script>
+
+</script>
+<!-- Final Cookies -->
+
+    <script src="src/js/scripts.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
