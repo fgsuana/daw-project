@@ -38,6 +38,9 @@
             <li class="nav-item mx-5">
               <a class="nav-link text-white" href="./contacto.php">Contacto</a>
             </li>
+              <li class="nav-item mx-5">
+              <a class="nav-link text-white" href="./sobre-nosotros.php">Sobre nosotros</a>
+            </li>
           </ul>
         </div>
 
