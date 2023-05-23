@@ -11,7 +11,20 @@
 </head>
 <body>
     <?php include 'header.php'; ?>
-
+    <!-- Inicio banner --><section class="spikes">
+    <div class="bannerimg">
+    <h2 class="h2subtitlemain">Más oportunidades laborales, mejores condiciones</h3>
+    <p class="subtitlemain">Conviértete en el profesional IT que tanto deseas</p>
+        <div class="d-flex h-100 align-items-center justify-content-center">
+            <div id="hero-image">
+                <form method="get" action="./src/buscar.php" class="buscadorhome">
+                    <span class="iconoinput"><img src="./src/img/macbook.svg" alt="macbook" height="30px"/></span>
+                    <input type="text" name="buscadortrabajo" placeholder="Buscar proyecto...">
+                    <input type="submit" value="Voy a tener suerte">
+                </form>
+            </div>
+        </div>
+    </div></section>
     <main class="mainbox">
 <?php
     // Verificar si se ha enviado una consulta
