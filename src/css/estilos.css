@@ -904,5 +904,18 @@ input[type="text"] {
 /* Inicio Sobre Nosotros */
 
     
+.imgsobrenosotros{
+    background: url(../img/equipo.jpg);
+    background-image: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-nosotros {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
 
 /* Final Sobre Nosotros */
