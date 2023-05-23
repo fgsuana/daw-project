@@ -112,6 +112,11 @@ span.mainhomejobsubtitle {
     color: #000;
 }
 
+.mt-5 {
+    margin-top: 3rem!important;
+    text-align: left;
+}
+
 span.registeralert {
     color: #000;
     font-size: 12px;
