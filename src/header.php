@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-xl navbar navcontrol fixed-top triangle">
       <div class="container-fluid">
         <!-- Logo -->
-        <a href="./index.php"><img id="logo" class="logonav ms-5" alt="Dev Match"></a>
+        <a href="./index.php"><img id="logo" class="logonav ms-5" alt="Dev Match" src="./img/logo.png"></a>
 
         <!-- Boton para ver menu en formato movil -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

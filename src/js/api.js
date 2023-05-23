@@ -64,7 +64,7 @@ export const login = async (email, password) => {
     if (success) {
       localStorage.setItem('isLogged', 'true');
       localStorage.setItem('userName', name);
-      window.location.href = '/index.php';
+      window.location.href = './index.php';
     } else {
       console.log('error');
     }
