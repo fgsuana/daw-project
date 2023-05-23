@@ -18,6 +18,10 @@ body {
     height: 90px;
 }
 
+.mainbox h1 {
+    margin-top: 5%;
+}
+
 .mainbox {
     padding: 1.5rem!important;
     width: 80%;
