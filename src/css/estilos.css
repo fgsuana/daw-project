@@ -112,6 +112,10 @@ span.mainhomejobsubtitle {
     color: #000;
 }
 
+.col-xl-6.mitad.color2 {
+    height: auto;
+}
+
 .mt-5 {
     margin-top: 3rem!important;
     text-align: left;
