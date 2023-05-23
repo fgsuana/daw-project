@@ -161,7 +161,7 @@ span.iconoinput {
 }
 
 .imgfooter {
-    width: 80%;
+    width: auto;
 }
 
 
@@ -341,13 +341,24 @@ Verde oscuro (#7AA874): Para botones y complementos.
 .boton-inicio{
     background-color: #19A7CE;
     border-radius: 40px 0 0 40px;
-    border: 0.5px solid black; 
+    border: none; 
     padding: 10px;
 }
 
 .boton-inicio:hover{
     background-color: #146c94;
     color: #F6F1F1;
+}
+
+button.me-3.boton-registro.d-inline-block {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+button.boton-inicio.d-inline-block {
+    color: #fff;
+    font-weight: bold;
 }
 
 .boton-registro{
@@ -638,14 +649,23 @@ footer {
     .trabajos {
         display: block;
         width: 100%;
+        padding:1rem;
     }
     
     .trabajo {
         margin: 8% 0%;
     }
 
+    main.mainbox {
+        margin-top: 25%;
+    }
+
     .social-icons {
         margin-top: 7%;
+    }
+
+    .imgfooter {
+        width: 80%;
     }
 
     .bannerimg {
@@ -665,7 +685,7 @@ footer {
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 26px 30px 14px 30px;
+        border-width: 17px 20px 10px 20px;
         border-color: #146C94 transparent transparent transparent;
         left: 50%;
         transform: translateX(-50%) translateY(100%);
