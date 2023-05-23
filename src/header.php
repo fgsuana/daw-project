@@ -12,7 +12,7 @@
   <header>
     <!-- Inicio Navbar-->
 
-    <nav class="navbar navbar-expand-xl navbar navcontrol fixed-top">
+    <nav class="navbar navbar-expand-xl navbar navcontrol fixed-top triangle">
       <div class="container-fluid">
         <!-- Logo -->
         <a href="#"><img id="logo" class="logonav ms-5" alt="Dev Match"></a>
