@@ -34,6 +34,12 @@ body {
     height: auto;
   }
   
+.profile-row {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 3%;
+}
+
   .triangle::before {
     content: '';
     position: absolute;
