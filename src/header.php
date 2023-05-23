@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-xl navbar navcontrol fixed-top triangle">
       <div class="container-fluid">
         <!-- Logo -->
-        <a href="../index.php"><img id="logo" class="logonav ms-5" alt="Dev Match"></a>
+        <a href="./index.php"><img id="logo" class="logonav ms-5" alt="Dev Match"></a>
 
         <!-- Boton para ver menu en formato movil -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item mx-5">
-              <a class="nav-link text-white" href="././index.php"><i class="fa-solid fa-house" style="color: #ffffff;"></i>
+              <a class="nav-link text-white" href="./index.php"><i class="fa-solid fa-house" style="color: #ffffff;"></i>
                 Inicio</a>
             </li>
             <li id="publish-project" class="nav-item mx-5">
@@ -35,7 +35,7 @@
                 Publicar proyecto</a>
             </li>
             <li class="nav-item mx-5">
-              <a class="nav-link text-white" href="./src/contacto.php">Contacto</a>
+              <a class="nav-link text-white" href="./contacto.php">Contacto</a>
             </li>
           </ul>
         </div>
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li id="login-text" class="nav-item mx-5">
-              <a class="nav-link text-white" href="././src/login.html"><i class="fa-solid fa-user"
+              <a class="nav-link text-white" href="./login.html"><i class="fa-solid fa-user"
                   style="color: #ffffff;"></i> Login</a>
             </li>
             <li id="user-name-text" class="nav-item mx-5">
@@ -54,7 +54,7 @@
               <a class="nav-link text-white"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Logout</a>
             </li>
             <li class="nav-item mx-5">
-              <a class="nav-link text-white" href="./src/registro.html"><i class="fa-solid fa-user-pen"
+              <a class="nav-link text-white" href="./registro.html"><i class="fa-solid fa-user-pen"
                   style="color: #ffffff;"></i> Registro</a>
             </li>
         </div>
@@ -62,14 +62,7 @@
       </div>
     </nav>
   </header>
-  <?php
-    $route = $_SERVER['REQUEST_URI'];
-    if (strpos($route, 'src') !== false) {
-      echo '<script src="js/header.js"></script>';
-    } else {
-      echo '<script src="src/js/header.js"></script>';
-    }
-  ?>
+  <script src="./js/header.js"></script>
 
 </body>
 

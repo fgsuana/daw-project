@@ -39,7 +39,7 @@ const getData = async () => {
 };
 
 const createDatabase = () => {
-  fetch('backend/create_database.php', {
+  fetch('../backend/create_database.php', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',

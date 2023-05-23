@@ -1,6 +1,6 @@
-export const getProfiles = async (url = 'backend') => {
+export const getProfiles = async () => {
   try {
-    const response = await fetch(`${url}/profile/get_perfiles.php`, {
+    const response = await fetch(`../backend/profile/get_perfiles.php`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -15,7 +15,7 @@ export const getProfiles = async (url = 'backend') => {
 
 export const getProjects = async () => {
   try {
-    const response = await fetch('backend/project/get_projects.php', {
+    const response = await fetch('../backend/project/get_projects.php', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -30,7 +30,7 @@ export const getProjects = async () => {
 
 export const createProject = async (projectName, projectDescription, id) => {
   try {
-    const response = await fetch('backend/project/create_project.php', {
+    const response = await fetch('../backend/project/create_project.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -64,7 +64,7 @@ export const login = async (email, password) => {
     if (success) {
       localStorage.setItem('isLogged', 'true');
       localStorage.setItem('userName', name);
-      window.location.href = '../index.php';
+      window.location.href = '/index.php';
     } else {
       console.log('error');
     }
@@ -76,7 +76,7 @@ export const login = async (email, password) => {
 
 export const getProfilesByProjectId = async (id) => {
   try {
-    const response = await fetch('./backend/profile/get_profiles_by_project_id.php', {
+    const response = await fetch('../backend/profile/get_profiles_by_project_id.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

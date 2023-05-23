@@ -24,18 +24,8 @@ const logout = () => {
   localStorage.setItem('isLogged', 'false');
   checkLogging();
 };
-const checkRoute = () => {
-  const route = window.location.href;
-  const logo = document.getElementById('logo');
 
-  if (route.includes('src')) {
-    logo.src = 'img/logo.png';
-  } else {
-    logo.src = 'src/img/logo.png';
-  }
-};
 window.logout = logout;
 window.addEventListener('load', () => {
-  checkRoute();
   checkLogging();
 });
