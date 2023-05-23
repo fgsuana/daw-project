@@ -87,6 +87,16 @@ span.mainhomejobsubtitle {
     display: flex;
 }
 
+.profiles {
+    font-size: 10px;
+    text-align: center;
+}
+
+.profiles button {
+    padding: 2%;
+    margin: 2%;
+}
+
 .bannerimg p{
     color: #000;
 }
