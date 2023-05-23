@@ -68,9 +68,9 @@
         <h3 class="prefooterh3">Trabajamos con las mejores marcas</h3>
         <img src="https://d2gma3rgtloi6d.cloudfront.net/e930ee29/images/main/main-header-logos-mobile@2x.png" />
     </div>
+
+
     <footer>
-
-
         <div class="social-icons"><i class="ejemplo fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-linkedin"></i> </div>
         <div class="legalfooter">
             <span>2023 Proyecto</span>
