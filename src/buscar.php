@@ -18,7 +18,7 @@
         <div class="d-flex h-100 align-items-center justify-content-center">
             <div id="hero-image">
                 <form method="get" action="./src/buscar.php" class="buscadorhome">
-                    <span class="iconoinput"><img src="./src/img/macbook.svg" alt="macbook" height="30px"/></span>
+                    <span class="iconoinput"><img src="./img/macbook.svg" alt="macbook" height="30px"/></span>
                     <input type="text" name="buscadortrabajo" placeholder="Buscar proyecto...">
                     <input type="submit" value="Voy a tener suerte">
                 </form>
