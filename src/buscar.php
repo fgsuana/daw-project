@@ -13,9 +13,9 @@
     <?php include 'header.php'; ?>
 <?php
     // Verificar si se ha enviado una consulta
-    if (isset($_GET['consulta'])) {
+    if (isset($_GET['buscadortrabajo'])) {
         // Obtener la consulta del formulario
-        $consulta = $_GET['consulta'];
+        $consulta = $_GET['buscadortrabajo'];
 
         // Aquí puedes realizar la lógica de búsqueda según tus necesidades.
         // Por ejemplo, podrías ejecutar una consulta en una base de datos.
