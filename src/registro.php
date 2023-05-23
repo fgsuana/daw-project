@@ -18,9 +18,7 @@
 
         <div class="principalregistro row d-flex justify-content-center align-items-center">
 
-            <div class="col-xl-6 mitad color1">
-
-
+            <div class="col-xl-6 mitad">
                 <div class="text-center textoregistro mt-5">
                     <h2>Únete a la mejor red de Desarrolladores del mundo.</h2>
                     <p>Conecta con otros profesionales del sector, empresas y proyectos.</p>
