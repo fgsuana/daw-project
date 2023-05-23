@@ -47,7 +47,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li id="login-text" class="nav-item mx-5">
-              <a class="nav-link text-white" href="./login.html"><i class="fa-solid fa-user"
+              <a class="nav-link text-white" href="./login.php"><i class="fa-solid fa-user"
                   style="color: #ffffff;"></i> Login</a>
             </li>
             <li id="user-name-text" class="nav-item mx-5">
