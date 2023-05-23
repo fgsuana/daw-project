@@ -101,5 +101,10 @@
     </div>
 </div>
 
-<?php include_once './footer.php'; ?>
+    <?php include_once './footer.php'; ?>
+    <script src="./js/scripts.js"></script>
+    <script type="module" src="./js/main.js"></script>
 
+</body>
+
+</html>

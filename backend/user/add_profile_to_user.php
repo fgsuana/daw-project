@@ -1,5 +1,4 @@
 <?php
-
 require_once '../config.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,14 +15,16 @@ $sql = "INSERT INTO usuario_perfil (id_usuario, id_perfil)
 VALUES 
 ('$id_usuario', '$id_perfil');";
 
+$response = array(); 
+
 if (mysqli_query($conn, $sql) === TRUE) {
-  echo "Error al insertar registros en la tabla de proyectos: ";
-
+  $response['success'] = true;
+  $response['message'] = "Registros insertados correctamente en la tabla de usuario_perfil";
 } else {
-  echo "Error al insertar registros en la tabla de proyectos: " . $conn->error;
+  $response['success'] = false;
+  $response['message'] = "Error al insertar registros en la tabla de usuario_perfil: " . $conn->error;
 }
+
 echo json_encode($response);
-
 $conn->close();
-
 ?>

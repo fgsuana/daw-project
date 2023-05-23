@@ -1,4 +1,4 @@
-import { getProfiles, createUser } from './api.js';
+import { getProfiles, createUser, addProfileToUser } from './api.js';
 let profiles = [];
 
 // Función para pintar los perfiles en la pantalla
@@ -16,13 +16,13 @@ const renderProfiles = () => {
     const checkbox = document.createElement('input');
     checkbox.classList.add('checkboxprofiles');
     checkbox.type = 'checkbox';
-    checkbox.value = profile.id;
+    checkbox.value = profile.id_perfil;
     checkbox.name = 'profile';
-    checkbox.id = `profile-${profile.id}`;
+    checkbox.id = `profile-${profile.id_perfil}`;
 
     const label = document.createElement('label');
     label.textContent = profile.nombre_perfil;
-    label.htmlFor = `profile-${profile.id}`;
+    label.htmlFor = `profile-${profile.id_perfil}`;
 
     valorInputPerfilDiv.appendChild(checkbox);
     valorInputPerfilDiv.appendChild(label);
@@ -40,19 +40,28 @@ const getData = async () => {
   renderProfiles();
 };
 
-const register = async() => {
-  const name = document.getElementById('name');
-  const lastName = document.getElementById('lastName');
-  const email = document.getElementById('email');
-  const telephone = document.getElementById('telephone');
-  const password = document.getElementById('password');
-  const {idUser} = await createUser({
-    name, lastName, email, telephone, password
-  });
-  const checkboxes = [...document.querySelectorAll('.valorinputperfil:checked')];
+const register = async () => {
+  const name = document.getElementById('name').value;
+  const lastName = document.getElementById('lastName').value;
+  const email = document.getElementById('email').value;
+  const telephone = document.getElementById('telephone').value;
+  const password = document.getElementById('password').value;
 
+  const { id } = await createUser({
+    name,
+    lastName,
+    email,
+    telephone,
+    password
+  });
+
+  const checkboxes = [...document.querySelectorAll('.checkboxprofiles:checked')];
   const values = checkboxes.map(checkbox => checkbox.value);
 
-  debugger
-}
+  for (const value of values) {
+    await addProfileToUser(id, value);
+  }
+  window.location.href = './login.php';
+};
+
 window.register = register;
