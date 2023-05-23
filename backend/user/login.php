@@ -18,10 +18,13 @@ $result = $conn->query($sql);
 if ($result->num_rows === 1) {
   $row = $result->fetch_assoc();
   $name = $row['nombre_usuario'];
+  $id = $row['id_usuario'];
+
   $response = [
     'success' => true,
     'message' => 'Login successful',
     'name' => $name,
+    'id' => $id,
   ];
 } else {
   $response = [

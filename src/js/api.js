@@ -60,10 +60,12 @@ export const login = async (email, password) => {
         password,
       }),
     });
-    const { success, name } = JSON.parse(await response.text());
+    const { success, name, id } = JSON.parse(await response.text());
     if (success) {
       localStorage.setItem('isLogged', 'true');
       localStorage.setItem('userName', name);
+      localStorage.setItem('id', id);
+
       window.location.href = './index.php';
     } else {
       console.log('error');
@@ -128,6 +130,31 @@ export const addProfileToUser = async (idUsuario, idPerfil) => {
 
     if (!response.ok) {
       throw new Error('Error al insertar los perfiles de usuario');
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
+export const addUserToProject = async (idUsuario, idPerfil, tipoUsuario) => {
+  try {
+    const response = await fetch('../backend/user/add_user_to_project.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        idUsuario,
+        idPerfil,
+        tipoUsuario,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Error al insertar los registros en la tabla de usuario_proyecto');
     }
 
     const data = await response.json();
