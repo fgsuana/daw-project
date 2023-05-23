@@ -30,8 +30,22 @@
     <!-- Fin banner -->
 
     <main class="mainbox">
+        <div class="mainhomejobs">
+            <div class="cajahomejobs">
+                <div><span class="mainhomejobtitle">¿Te gustaría crecer como profesional en IT?</span></div>
+                <div><span class="mainhomejobsubtitle">Desarrolla tus habilidades profesionales con el proyecto que más se adapte a tus inquietudes.</span></div> 
 
+                    <div class="steps">
+                        <div class="step"><img src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"></div>
+                        <div class="step"><img src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"></div>
+                        <div class="step"><img src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"></div>
+                    </div>
+            </div>   
+        </div>
+        
         <h2>Últimos proyectos publicados</h2>
+
+
         <section class="trabajos">
 
         </section>
@@ -49,8 +63,13 @@
         <h3>Entérate de las últimas novedades del sector IT en nuestro blog</h3>
          
     </main>
-
+    <div class="prefooter spikes">
+        <h3 class="prefooterh3">Trabajamos con las mejores marcas</h3>
+        <img src="https://d2gma3rgtloi6d.cloudfront.net/e930ee29/images/main/main-header-logos-mobile@2x.png" />
+    </div>
     <footer>
+
+
         <div class="social-icons"><i class="ejemplo fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-linkedin"></i> </div>
         <div class="legalfooter">
             <span>2023 Proyecto</span>
@@ -58,6 +77,7 @@
             <span><a href="./src/politica-cookies.php">Política de cookies</a></span>
             <span><a href="./src/politica-privacidad.php">Política de privacidad</a></span>
         </div>
+
     </footer>
 
 <!-- Inicio Cookies -->
