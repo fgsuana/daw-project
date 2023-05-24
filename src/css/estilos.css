@@ -540,6 +540,11 @@ button.boton-inicio.d-inline-block {
     color:#000;
 }
 
+button.unirsebtn {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
 .checkboxprofiles{
     margin: 10px 6px 10px 15px;
     transform: scale(1.5);
