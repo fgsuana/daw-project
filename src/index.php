@@ -19,11 +19,11 @@
     <p class="subtitlemain">Conviértete en el profesional IT que tanto deseas</p>
         <div class="d-flex h-100 align-items-center justify-content-center">
             <div id="hero-image">
-                <form method="get" action="buscar.php" class="buscadorhome">
+                <div class="buscadorhome">
                     <span class="iconoinput"><img src="./img/macbook.svg" alt="macbook" height="30px"/></span>
-                    <input type="text" name="buscadortrabajo" placeholder="Buscar proyecto...">
+                    <input id="search" type="text" name="buscadortrabajo" placeholder="Buscar proyecto..."  onkeyup="searchProject()">
                     <input type="submit" value="Voy a tener suerte">
-                </form>
+                </div>
             </div>
         </div>
     </div></section>

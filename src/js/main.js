@@ -1,5 +1,6 @@
 import { getProjects , getProfilesByProjectId, addUserToProject } from './api.js';
 
+let projects = [];
 
 const checkLogging = () => {
   const isLogged = localStorage.getItem('isLogged');
@@ -18,9 +19,8 @@ const buildRoles = async (id) => {
   }).join('');
 };
 
-const renderProjects = async () => {
+const renderProjects = async (projects) => {
   const contenedorTrabajos = document.querySelector('.trabajos');
-  const projects = await getProjects();
 
   const projectsHTML = await Promise.all(projects.map(async (project) => {
     const projectId = project.id_proyecto;
@@ -37,7 +37,8 @@ const renderProjects = async () => {
 };
 
 const getData = async () => {
-  renderProjects();
+  projects = await getProjects();
+  renderProjects(projects);
 };
 
 const createDatabase = () => {
@@ -58,7 +59,27 @@ const applyToProject = (id) => {
   const idUser = localStorage.getItem('id');
   addUserToProject(idUser, id, 'candidate');
 }
+
+const searchProject = () => {
+  const search =  document.getElementById('search').value;
+  const filteredProjects = projects.filter(project => {
+    const nombreEncontrado = project.nombre_proyecto.toLowerCase().includes(search.toLowerCase());
+    const descripcionEncontrada = project.descripcion_proyecto.toLowerCase().includes(search.toLowerCase());
+    
+    return nombreEncontrado || descripcionEncontrada;
+  });
+  renderProjects(filteredProjects);
+
+}
+
+const clearSearch = () => {
+  document.getElementById('search').value = '';
+  renderProjects(projects);
+}
+
 window.applyToProject = applyToProject;
+window.searchProject = searchProject;
+window.clearSearch = clearSearch;
 window.addEventListener('load', () => {
   createDatabase();
 });
