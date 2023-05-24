@@ -17,20 +17,20 @@
     
     <div class="inputformproyecto d-flex align-items-center justify-content-center" style="height: 100vh;">
         <div class="container">
-            <h1 class="colorwhite text-center">Formulario para crear un proyecto</h1>
+            <h1 class="text-center">Formulario para crear un proyecto</h1>
             <form action="#" method="POST">
             <div class="form-group text-center">
-                <label class="colorwhite mt-3" for="nombre-proyecto">Nombre del proyecto</label>
+                <label class="mt-3" for="nombre-proyecto">Nombre del proyecto</label>
                 <input type="text" class="form-control" id="nombre-proyecto" name="nombre-proyecto" required>
             </div>
         
             <div class="form-group text-center">
-                <label class="colorwhite mt-3" for="puestos-libres">Puestos libres o desarrolladores necesarios</label>
+                <label class="mt-3" for="puestos-libres">Puestos libres o desarrolladores necesarios</label>
                 <input type="text" class="form-control" id="puestos-libres" name="puestos-libres" required>
             </div>
         
             <div class="form-group text-center">
-                <label class="colorwhite mt-3" for="categoria-proyecto">Categoría del proyecto</label>
+                <label class="mt-3" for="categoria-proyecto">Categoría del proyecto</label>
                 <select class="form-control" id="categoria-proyecto" name="categoria-proyecto" required>
                 <option class="text-center" value="" selected>Seleccione una categoría</option>
                 <option class="text-center" value="Front-end">Front-end</option>
@@ -39,7 +39,7 @@
             </div>
         
             <div class="form-group text-center">
-                <label class="colorwhite mt-3" for="descripcion-proyecto">Descripción del proyecto</label>
+                <label class="mt-3" for="descripcion-proyecto">Descripción del proyecto</label>
                 <textarea class="form-control" id="descripcion-proyecto" name="descripcion-proyecto" rows="5" required></textarea>
             </div>
             
