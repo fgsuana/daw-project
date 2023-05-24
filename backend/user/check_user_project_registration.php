@@ -6,9 +6,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
-$id_proyecto = $_POST["idProyecto"];
-$id_usuario = $_POST["idUsuario"];
+$data = json_decode(file_get_contents('php://input'), true);
+$id_proyecto = $data["idProyecto"];
+$id_usuario = $data["idUsuario"];
 
 $sql = "SELECT * FROM usuario_proyecto WHERE id_proyecto = '$id_proyecto' AND id_usuario = '$id_usuario'";
 $result = $conn->query($sql);
