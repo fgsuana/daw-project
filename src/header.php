@@ -56,7 +56,7 @@
             <li id="user-name-text" class="nav-item mx-5">
               <a class="nav-link text-white" href="./admin.php"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Panel Administración <span id="user-name"></span></a>
             </li>
-            <li id="logout-text" class="nav-item mx-5" onclick="logout()">
+            <li style="cursor:pointer;" id="logout-text" class="nav-item mx-5" onclick="logout()">
               <a class="nav-link text-white"><i class="fa-solid fa-user" style="color: #ffffff;"></i> Logout</a>
             </li>
             <li id="idregistro" class="nav-item mx-5">

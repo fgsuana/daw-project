@@ -24,6 +24,7 @@
 
         <div>
             <h2>Tus proyectos activos</h2>
+            <section class="tustrabajos"></section>
         </div>
         
         <div class="row">

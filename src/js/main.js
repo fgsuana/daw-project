@@ -1,6 +1,7 @@
 import { getProjects , getProfilesByProjectId, addUserToProject, checkUserProjectRegistration } from './api.js';
 
 let projects = [];
+let contenedorTrabajos = [];
 
 const checkLogging = () => {
   const isLogged = localStorage.getItem('isLogged');
@@ -23,7 +24,7 @@ const buildRoles = async (projectId, userId) => {
 };
 
 const renderProjects = async (projects) => {
-  const contenedorTrabajos = document.querySelector('.trabajos');
+  contenedorTrabajos = document.querySelector('.trabajos');
 
   const projectsHTML = await Promise.all(projects.map(async (project) => {
     const projectId = project.id_proyecto;
