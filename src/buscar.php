@@ -26,7 +26,7 @@
     <p class="subtitlemain">Prueba otra vez</p>
         <div class="d-flex h-100 align-items-center justify-content-center">
             <div id="hero-image">
-                <form method="get" action="./src/buscar.php" class="buscadorhome">
+                <form method="get" action="./buscar.php" class="buscadorhome">
                     <span class="iconoinput"><img src="./img/macbook.svg" alt="macbook" height="30px"/></span>
                     <input type="text" name="buscadortrabajo" placeholder="Buscar proyecto...">
                     <input type="submit" value="Voy a tener suerte">
@@ -83,12 +83,14 @@ if ($resultado->num_rows > 0) {
     while ($fila = $resultado->fetch_assoc()) {
                 // Mostrar los datos relevantes de cada resultado
 
-        echo "<div class='consultaresult'>";
+        echo "<div class='consultaresult'> <i class='fa-solid fa-diagram-project' style='color: #000000;'></i> ";
         echo $fila['nombre_proyecto'];
         echo "</div>";
     }
 } else {
-    echo "No se encontraron resultados";
+    echo "<div class='consultaresult'>";
+    echo "❌ No se encontraron resultados";
+    echo "</div>";
 }
 
 // Cerrar la conexión con la base de datos
