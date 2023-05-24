@@ -36,9 +36,9 @@
                 <div><span class="mainhomejobsubtitle">Desarrolla tus habilidades profesionales con el proyecto que más se adapte a tus inquietudes.</span></div> 
 
                     <div class="steps">
-                        <div class="step"><img src="./img/computer.png" class="stepimg"></div>
-                        <div class="step"><img src="./img/process.png" class="stepimg"></div>
-                        <div class="step"><img src="./img/developer.png" class="stepimg"></div>
+                        <div class="step"><img src="./img/computer.png" class="stepimg"><p>Consulta los proyectos disponibles en el tablero</p></div>
+                        <div class="step"><img src="./img/process.png" class="stepimg"><p>Únete a los proyectos que te llamen la atención</p></div>
+                        <div class="step"><img src="./img/developer.png" class="stepimg"><p>Empieza a desarrollar con tus compañeros el proyecto</p></div>
                     </div>
             </div>   
         </div>
