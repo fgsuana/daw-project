@@ -80,6 +80,9 @@
 
     </div>
     
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.468020003329!2d2.1659432321837278!3d41.385641364352495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f363144023%3A0xf75eff2ca4d80986!2sC.%20de%20Pelai%2C%207%2C%2008001%20Barcelona!5e0!3m2!1ses!2ses!4v1684937470887!5m2!1ses!2ses" width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    
 
     <?php include_once './footer.php'; ?>

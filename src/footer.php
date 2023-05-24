@@ -2,7 +2,7 @@
 <footer>
         <div class="social-icons"><a href="https://www.facebook.com/devmatchweb"><i class="ejemplo fa-brands fa-facebook"></i></a> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-linkedin"></i> </div>
         <div class="legalfooter">
-            <span>2023 Proyecto</span>
+            <span>2023 &copy; DevMatch</span>
             <span><a href="./aviso-legal.php">Aviso legal</a></span>
             <span><a href="./politica-cookies.php">Política de cookies</a></span>
             <span><a href="./politica-privacidad.php">Política de privacidad</a></span>
