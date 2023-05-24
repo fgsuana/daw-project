@@ -540,6 +540,16 @@ button.boton-inicio.d-inline-block {
     color:#000;
 }
 
+.consultaresult {
+    padding: 3%;
+    text-align: center;
+    margin: 4% 0%;
+}
+
+img.imghome {
+    width: 80%;
+}
+
 button.unirsebtn {
     text-transform: uppercase;
     font-size: 14px;
