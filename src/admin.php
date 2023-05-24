@@ -105,9 +105,8 @@ echo $iduser;
             </div>
             <div>
                 <h2 class="mb-4">Visita el blog para enterarte de todo</h2>
-                <div class="text-center">
-                   
-                </div>
+   <p>En nuestro blog estarás informado sobre las últimas novedades en el sector IT y podrás encontrar consejos para ser un mejor profesional.</p>
+         <a href="https://www.itcmadi.com/devmatch1/blog/"><img src="./img/blogbanner.png" class="blogimg"></a>
             </div>
         </div>
 
