@@ -62,7 +62,7 @@
     
         <h3>Entérate de las últimas novedades del sector IT en nuestro blog</h3>
             <p>En nuestro blog estarás informado sobre las últimas novedades en el sector IT y podrás encontrar consejos para ser un mejor profesional.</p>
-         <img src="https://smartblogger.com/wp-content/uploads/2022/08/type-of-blogs-700.png" class="imghome">
+         <a href="https://www.itcmadi.com/devmatch1/blog/"><img src="./img/blogbanner.png" class="blogimg"></a>
     </main>
     <div class="prefooter spikes">
         <h3 class="prefooterh3">Trabajamos con las mejores marcas</h3>
