@@ -752,9 +752,10 @@ footer {
     background-color: #e6e6e6;
 }
 
-.blogimg{
+.blogimg {
     display: block;
- margin: 0 auto;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 img.stepimg {
