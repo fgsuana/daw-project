@@ -534,6 +534,10 @@ button.boton-inicio.d-inline-block {
     display: block;
 }
 
+.inputformproyecto input, .inputformproyecto select, .inputformproyecto textarea {
+    color: #000!important;
+}
+
 .botonacepreg:hover{
     border: 0.5px solid black; 
     background-color: #19A7CE;
@@ -674,11 +678,6 @@ button.unirsebtn {
     background-color: #146C94;
     color: #F6F1F1;
 }
-
-.inputformproyecto input, .inputformproyecto select, .inputformproyecto textarea {
-    background-color: #146C94;
-    color: #F6F1F1;
-  }
 
 .inputformproyecto label{
     font-size: 1.5em;
