@@ -30,9 +30,6 @@
             </div>            
 
             <div class="col-xl-6 mitad color2">
-                <div class="text-end m-3">
-                    <a href="login.html"><button class="boton-inicio d-inline-block">Iniciar Sesión</button></a><a href="registro.html"><button class="me-3 boton-registro d-inline-block">Regístrate</button></a>
-                </div>
                 <div class="text-start">
                     <div class="content-regis">
                         <label for="nombre">NOMBRE COMPLETO</label>
