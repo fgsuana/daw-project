@@ -86,6 +86,9 @@ if ($resultado->num_rows > 0) {
         echo "<div class='consultaresult'> <i class='fa-solid fa-diagram-project' style='color: #000000;'></i> ";
         echo $fila['nombre_proyecto'];
         echo "</div>";
+        echo "<div class='consultadescripcion'> <i class='fa-solid fa-pen-to-square' style='color: #000000;'></i> ";
+        echo $fila['descripcion_proyecto'];
+        echo "</div>";
     }
 } else {
     echo "<div class='consultaresult'>";
