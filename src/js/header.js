@@ -6,7 +6,7 @@ const checkLogging = () => {
   const userNameText = document.getElementById('user-name-text');
   const userName = document.getElementById('user-name');
   const userNameAdmin = document.getElementById('user-name-admin');
-
+  const idregistro = document.getElementById("idregistro");
 
 
   if (isLogged === 'true') {
@@ -15,7 +15,10 @@ const checkLogging = () => {
     userNameText.style.display = 'inline';
     loginElement.style.display = 'none';
     userName.textContent = localStorage.getItem('userName');
-    userNameAdmin.textContent = localStorage.getItem('userName');
+    idregistro.style.display = 'none';
+    if(userNameAdmin) {
+      userNameAdmin.textContent = localStorage.getItem('userName');
+    }
   } else {
     publishElement.style.display = 'none';
     logoutElement.style.display = 'none';
