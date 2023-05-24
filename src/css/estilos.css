@@ -721,6 +721,37 @@ footer {
     margin: 1.5% 0%;
 }
 
+.activeprojects {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    padding: 3%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.activeprojects th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.activeprojects td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.activeprojects tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.activeprojects tr:hover {
+    background-color: #e6e6e6;
+}
+
 @media (max-width: 500px) {
     .trabajos {
         display: block;
@@ -730,6 +761,15 @@ footer {
     
     img.imghome {
         width: 80%;
+    }
+
+    .activeprojects {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 11px;
+        padding: 3%;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 
     .trabajo {
