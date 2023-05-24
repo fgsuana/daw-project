@@ -547,8 +547,10 @@ button.boton-inicio.d-inline-block {
 }
 
 img.imghome {
-    width: 80%;
+    width: auto;
 }
+
+
 
 button.unirsebtn {
     text-transform: uppercase;
@@ -714,6 +716,10 @@ footer {
         display: block;
         width: 100%;
         padding:1rem;
+    }
+    
+    img.imghome {
+        width: 80%;
     }
     
     .trabajo {
