@@ -36,9 +36,9 @@
                 <div><span class="mainhomejobsubtitle">Desarrolla tus habilidades profesionales con el proyecto que más se adapte a tus inquietudes.</span></div> 
 
                     <div class="steps">
-                        <div class="step"><img src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"></div>
-                        <div class="step"><img src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"></div>
-                        <div class="step"><img src="https://detallesorballo.com/wp-content/uploads/2020/09/imagen-de-prueba-320x240-1.jpg"></div>
+                        <div class="step"><img src="./img/computer.png" class="stepimg"></div>
+                        <div class="step"><img src="./img/process.png" class="stepimg"></div>
+                        <div class="step"><img src="./img/developer.png" class="stepimg"></div>
                     </div>
             </div>   
         </div>
@@ -61,11 +61,12 @@
         </section>
     
         <h3>Entérate de las últimas novedades del sector IT en nuestro blog</h3>
-         
+            <p>En nuestro blog estarás informado sobre las últimas novedades en el sector IT y podrás encontrar consejos para ser un mejor profesional.</p>
+         <a href="https://www.itcmadi.com/devmatch1/blog/"><img src="./img/blogbanner.png" class="blogimg"></a>
     </main>
     <div class="prefooter spikes">
         <h3 class="prefooterh3">Trabajamos con las mejores marcas</h3>
-        <img src="https://d2gma3rgtloi6d.cloudfront.net/e930ee29/images/main/main-header-logos-mobile@2x.png" class="imghome"/>
+        <div class="blogimg"><img src="https://d2gma3rgtloi6d.cloudfront.net/e930ee29/images/main/main-header-logos-mobile@2x.png" class="imghome"/></div>
     </div>
 
 

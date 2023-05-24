@@ -34,9 +34,8 @@
             </div>
             <div>
                 <h2 class="mb-4">Visita el blog para enterarte de todo</h2>
-                <div class="text-center">
-                    <a target="_blank" href="https://www.itcmadi.com/devmatch1/blog/como-superar-el-sindrome-del-impostor-en-el-campo-de-la-tecnologia-de-la-informacion/"><img src="img/blogfoto.png" alt="asdasd"></a>
-                </div>
+   <p>En nuestro blog estarás informado sobre las últimas novedades en el sector IT y podrás encontrar consejos para ser un mejor profesional.</p>
+         <a href="https://www.itcmadi.com/devmatch1/blog/"><img src="./img/blogbanner.png" class="blogimg"></a>
             </div>
         </div>
 
