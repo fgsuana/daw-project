@@ -20,12 +20,14 @@ const createUserProject = async () => {
 
 const renderProfiles = (profiles) => {
   const profilesHTML = profiles.map(profile => {
-    return `<input class="checkboxprofiles" type="checkbox"  value="${profile.id_perfil}">
-    <label for="tienda1">${profile.nombre_perfil}</label><br>`;
-  })
+    return `<div class="perfildevmatch">
+      <input class="checkboxprofiles" type="checkbox" value="${profile.id_perfil}">
+      <label for="tienda1">${profile.nombre_perfil}</label><br>
+    </div>`;
+  });
   profilesContainer.innerHTML = profilesHTML.join('');
-
 }
+
 const getData = async () => {
   renderProfiles(await getProfiles());
 };
