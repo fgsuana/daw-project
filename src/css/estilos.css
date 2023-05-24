@@ -967,3 +967,14 @@ input[type="text"] {
   
 
 /* Final Sobre Nosotros */
+
+
+/*Inicio admin*/
+
+.fotoblogadm{
+    background-image: url(../img/blogfoto.png);
+    width: 200px;
+    height: 200px;
+}
+
+/*Fin admin*/
