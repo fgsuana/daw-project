@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de trabajo</title>
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 
 <body class="bodypubproyecto">
     <header>
- <?php include 'header.php'; ?>
+    <?php include 'header.php'; ?>
     </header>
     
     <div class="inputformproyecto d-flex align-items-center justify-content-center" style="height: 100vh;">
@@ -51,11 +51,5 @@
     </div>
 
     </main>
-    
-    <script src="src/js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
-        crossorigin="anonymous"></script>
-</body>
 
-</html>
+    <?php include_once './footer.php'; ?>
