@@ -41,7 +41,7 @@
         <!-- Caja 1 = Mapa -->
         <div class="imagencontact d-flex flex-column justify-content-center align-items-center">
             <h4>¡Contáctanos!</h4>
-            <p>Si tienes dudas solo contáctanos y te atenderemos lo antes posiible</p>
+            <p>Si tienes dudas solo contáctanos y te atenderemos lo antes posible.</p>
         </div>
 
 
@@ -75,7 +75,7 @@
                     <textarea class="form-control text-start" cols="30" rows="15" placeholder="Mensaje"></textarea>
                 </div>
             </div>
-
+            <input type="submit" value="Enviar mensaje">
         </div>
 
     </div>
