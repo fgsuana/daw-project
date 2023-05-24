@@ -12,6 +12,7 @@ $id_usuario = $data["idUsuario"];
 
 $sql = "SELECT * FROM usuario_proyecto WHERE id_proyecto = '$id_proyecto' AND id_usuario = '$id_usuario'";
 $result = $conn->query($sql);
+$conn->close();
 
 if ($result->num_rows > 0) {
     $response = true;
@@ -19,6 +20,5 @@ if ($result->num_rows > 0) {
     $response = false; 
 }
 
-$conn->close();
 echo json_encode($response);
 ?>

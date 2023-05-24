@@ -139,6 +139,29 @@ export const addProfileToUser = async (idUsuario, idPerfil) => {
   }
 };
 
+export const addProfileToProject = async (idProject, idProfile) => {
+  try {
+    const response = await fetch('../backend/project/add_profile_to_project.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        idProject,
+        idProfile,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Error al insertar los perfiles de proyecto');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};
+
 export const addUserToProject = async (idUsuario, idPerfil, tipoUsuario) => {
   try {
     const response = await fetch('../backend/user/add_user_to_project.php', {
