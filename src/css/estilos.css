@@ -543,7 +543,7 @@ button.boton-inicio.d-inline-block {
 .consultaresult {
     padding: 3%;
     text-align: center;
-    margin: 4% 0%;
+    margin: 2.5% 0%;
 }
 
 img.imghome {
@@ -711,6 +711,11 @@ footer {
     background: #e2e2e2;
 }
 
+.consultadescripcion {
+    padding: 3%;
+    margin: 1.5% 0%;
+}
+
 @media (max-width: 500px) {
     .trabajos {
         display: block;
@@ -721,7 +726,7 @@ footer {
     img.imghome {
         width: 80%;
     }
-    
+
     .trabajo {
         margin: 8% 0%;
     }
@@ -745,7 +750,6 @@ footer {
     .steps {
         display: block;
     }
-
 
 
     .triangle::before {
