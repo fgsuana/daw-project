@@ -8,8 +8,8 @@ if ($conn->connect_error) {
 }
 
 $data = json_decode(file_get_contents('php://input'), true);
-$id_proyecto = $data['idUsuario'];
-$id_usuario = $data['idPerfil'];
+$id_proyecto = $data['idPerfil'];
+$id_usuario = $data['idUsuario'];
 $tipo_usuario = $data['tipoUsuario'];
 
 $sql = "INSERT INTO usuario_proyecto (id_proyecto, id_usuario, tipo_usuario)

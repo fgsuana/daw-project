@@ -60,9 +60,10 @@ const createDatabase = () => {
     });
 };
 
-const applyToProject = (id) => {
+const applyToProject = async (projectId) => {
   const userId = localStorage.getItem('id');
-  addUserToProject(userId, id, 'candidate');
+  await addUserToProject(userId, projectId, 'candidate');
+  renderProjects(projects)
 }
 
 const searchProject = () => {
