@@ -9,7 +9,7 @@ const checkLogging = () => {
 const buildRoles = async (id) => {
   const profiles = await getProfilesByProjectId(id);
   const button = checkLogging() ? `<button class="unirsebtn" onclick="applyToProject(${id})">Unirse</button>` : '';
-  const registerAlert = checkLogging() ? '' : '<span class="registeralert">⚠️ Debes <a href="./src/registro.html">registrarte</a> para poder unirte al proyecto</span>';
+  const registerAlert = checkLogging() ? '' : '<span class="registeralert">⚠️ Debes <a href="./registro.php">registrarte</a> para poder unirte al proyecto</span>';
 
   return profiles.map((profile) => {
     return `<div class="profile-row">${profile.nombre_perfil}</div>
