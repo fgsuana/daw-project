@@ -752,6 +752,17 @@ footer {
     background-color: #e6e6e6;
 }
 
+.blogimg{
+    display: block;
+ margin: 0 auto;
+}
+
+img.stepimg {
+    max-width: 250px;
+    padding: 4%;
+    margin: 4%;
+}
+
 @media (max-width: 500px) {
     .trabajos {
         display: block;
