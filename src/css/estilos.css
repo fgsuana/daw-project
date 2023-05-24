@@ -58,7 +58,8 @@ form.buscadorhome {
 }
 
 main.mainbox {
-    margin-top: 4%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .bannerimg{
@@ -536,6 +537,11 @@ button.boton-inicio.d-inline-block {
 
 .inputformproyecto input, .inputformproyecto select, .inputformproyecto textarea {
     color: #000!important;
+}
+
+.perfildevmatch {
+    font-size: 11px;
+    margin: 9px 0px;
 }
 
 .botonacepreg:hover{
