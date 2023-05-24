@@ -163,3 +163,27 @@ export const addUserToProject = async (idUsuario, idPerfil, tipoUsuario) => {
     return error;
   }
 };
+
+export const checkUserProjectRegistration = async (idProyecto, idUsuario) => {
+  try {
+    const response = await fetch('../backend/user/check_user_project_registration.php', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        idProyecto,
+        idUsuario,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error('Error al realizar la consulta en la tabla de usuario_proyecto');
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    return error;
+  }
+};

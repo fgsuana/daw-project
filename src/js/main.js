@@ -1,4 +1,4 @@
-import { getProjects , getProfilesByProjectId, addUserToProject } from './api.js';
+import { getProjects , getProfilesByProjectId, addUserToProject, checkUserProjectRegistration } from './api.js';
 
 let projects = [];
 
@@ -6,10 +6,13 @@ const checkLogging = () => {
   const isLogged = localStorage.getItem('isLogged');
   return isLogged === 'true';
 };
+const ownProject = async (projectId, userId) => {
+  return !await checkUserProjectRegistration(projectId, userId);
+}
 
-const buildRoles = async (id) => {
-  const profiles = await getProfilesByProjectId(id);
-  const button = checkLogging() ? `<button class="unirsebtn" onclick="applyToProject(${id})">Unirse</button>` : '';
+const buildRoles = async (projectId, userId) => {
+  const profiles = await getProfilesByProjectId(projectId);
+  const button = checkLogging() && await ownProject(projectId, userId) ? `<button class="unirsebtn" onclick="applyToProject(${projectId})">Unirse</button>` : '';
   const registerAlert = checkLogging() ? '' : '<span class="registeralert">⚠️ Debes <a href="./registro.php">registrarte</a> para poder unirte al proyecto</span>';
 
   return profiles.map((profile) => {
@@ -24,7 +27,8 @@ const renderProjects = async (projects) => {
 
   const projectsHTML = await Promise.all(projects.map(async (project) => {
     const projectId = project.id_proyecto;
-    const rolesHTML = await buildRoles(projectId);
+    const userId = localStorage.getItem('id');
+    const rolesHTML = await buildRoles(projectId, userId);
     
     return `<div class="trabajo">
       <div class="trabajotitle">${project.nombre_proyecto}</div>
@@ -55,9 +59,10 @@ const createDatabase = () => {
       console.error(error);
     });
 };
+
 const applyToProject = (id) => {
-  const idUser = localStorage.getItem('id');
-  addUserToProject(idUser, id, 'candidate');
+  const userId = localStorage.getItem('id');
+  addUserToProject(userId, id, 'candidate');
 }
 
 const searchProject = () => {
@@ -72,14 +77,8 @@ const searchProject = () => {
 
 }
 
-const clearSearch = () => {
-  document.getElementById('search').value = '';
-  renderProjects(projects);
-}
-
 window.applyToProject = applyToProject;
 window.searchProject = searchProject;
-window.clearSearch = clearSearch;
 window.addEventListener('load', () => {
   createDatabase();
 });
