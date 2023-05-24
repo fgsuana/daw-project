@@ -1,4 +1,5 @@
 <?php
+
     // Verificar si se ha enviado una consulta
     if (isset($_GET['buscadortrabajo'])) {
         // Obtener la consulta del formulario
@@ -49,11 +50,50 @@
         // Aquí puedes mostrar los resultados obtenidos de la búsqueda.
         // Puedes utilizar un bucle para mostrar cada resultado.
 
-        // Ejemplo de resultado
-        echo "<p>Resultado 1</p>";
-        echo "<p>Resultado 2</p>";
-        echo "<p>Resultado 3</p>";
     }
+
+
+
+    // Establecer la conexión con la base de datos
+
+
+$servername = "localhost:3306";
+$username = "root";
+$password = "";
+$dbname = "devMatch";
+
+
+$conexion = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar si hay un error de conexión
+if ($conexion->connect_error) {
+    die('Error de conexión: ' . $conexion->connect_error);
+}
+
+// Escapar caracteres especiales para evitar inyecciones SQL
+$consulta = $conexion->real_escape_string($consulta);
+
+// Realizar la consulta en la base de datos
+$sql = "SELECT * FROM proyecto WHERE nombre_proyecto LIKE '%$consulta%'";
+$resultado = $conexion->query($sql);
+
+// Verificar si se encontraron resultados
+if ($resultado->num_rows > 0) {
+    // Mostrar los resultados
+    while ($fila = $resultado->fetch_assoc()) {
+                // Mostrar los datos relevantes de cada resultado
+
+        echo "<div class='consultaresult'>";
+        echo $fila['nombre_proyecto'];
+        echo "</div>";
+    }
+} else {
+    echo "No se encontraron resultados";
+}
+
+// Cerrar la conexión con la base de datos
+$conexion->close();
+
     ?>
 
 
