@@ -10,20 +10,91 @@
     <title>Panel de administración</title>
 </head>
 <body>
+<?php include 'header.php'; ?>
     <script>
         const isLogged = localStorage.getItem('isLogged');
         if (isLogged === 'false') {
             window.location.href = './index.php';
         }
+
+
+            // Obtener el valor de la variable del almacenamiento local
+let iduser = localStorage.getItem('id');
+
+// Verificar si el valor de iduser no está vacío o indefinido
+if (iduser) {
+  // Realizar la solicitud AJAX solo si el valor de iduser está presente
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState === 4 && this.status === 200) {
+      // La solicitud se ha completado correctamente
+      console.log('Valor de iduser enviado al servidor');
+    }
+  };
+  xhttp.open("GET", "admin.php?iduser=" + iduser, true);
+  xhttp.send();
+} else {
+  console.log('El valor de iduser está vacío o indefinido');
+}
     </script>
 
-    <?php include 'header.php'; ?>
+    
+    <?php
+// Obtener el valor de iduser enviado en la solicitud AJAX
+$iduser = $_GET['iduser'];
 
+// Ejemplo: imprimir el valor de iduser
+echo $iduser;
+?>
     <div class="container-fluid mb-5">
         <h4 class="text-center mt-5">Bienvenido a tu Panel de Control <span style="color:black" id="user-name-admin"></span></h4>
 
         <div>
             <h2>Tus proyectos activos</h2>
+
+                            <?php
+                // Datos de conexión a la base de datos
+                $servername = "localhost:3307";
+                $username = "root";
+                $password = "";
+                $dbname = "devMatch";
+
+                // Crear la conexión a la base de datos
+                $conn = new mysqli($servername, $username, $password, $dbname);
+
+                // Verificar si hay errores en la conexión
+                if ($conn->connect_error) {
+                    die("Error de conexión: " . $conn->connect_error);
+                }
+
+                // Consulta SQL
+                $sql = "SELECT p.id_proyecto, p.nombre_proyecto 
+                        FROM proyecto p 
+                        INNER JOIN usuario_proyecto up ON p.id_proyecto = up.id_proyecto 
+                        WHERE up.id_usuario = 1";
+
+                // Ejecutar la consulta
+                $result = $conn->query($sql);
+
+                // Verificar si hay resultados
+                if ($result->num_rows > 0) {
+                    // Imprimir la tabla
+                    echo "<table class='activeprojects'>";
+                    echo "<tr><th>ID Proyecto</th><th>Nombre Proyecto</th></tr>";
+                    
+                    // Imprimir los resultados
+                    while ($row = $result->fetch_array()) {
+                        echo "<tr><td>".$row['id_proyecto']."</td><td>".$row['nombre_proyecto']."</td></tr>";
+                    }
+                    
+                    echo "</table>";
+                } else {
+                    echo "No se encontraron resultados.";
+                }
+
+                // Cerrar la conexión
+                $conn->close();
+?>
             <section class="tustrabajos"></section>
         </div>
         
@@ -42,5 +113,6 @@
 
     </div>
     
+
     <script type="module" src="./js/main.js"></script>
     <?php include_once './footer.php'; ?>
