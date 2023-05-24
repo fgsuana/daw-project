@@ -10,6 +10,13 @@
     <title>Contacto</title>
 </head>
 <body>
+    <script>
+        const isLogged = localStorage.getItem('isLogged');
+        if (isLogged === 'false') {
+            window.location.href = './index.php';
+        }
+    </script>
+
     <?php include 'header.php'; ?>
 
     <div class="container-fluid mb-5">
