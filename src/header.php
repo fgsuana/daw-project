@@ -32,7 +32,7 @@
                 Inicio</a>
             </li>
             <li id="publish-project" class="nav-item mx-5">
-              <a class="nav-link text-white" href="#galeria"><i class="fa-solid fa-folder" style="color: #ffffff;"></i>
+              <a class="nav-link text-white" href="./pubproyecto.php"><i class="fa-solid fa-folder" style="color: #ffffff;"></i>
                 Publicar proyecto</a>
             </li>
             <li class="nav-item mx-5">
