@@ -1,14 +1,14 @@
 import { getProfiles, createUser, addProfileToUser } from './api.js';
+
 let profiles = [];
 
-// Función para pintar los perfiles en la pantalla
+/**
+ * Renders the profiles by dynamically creating checkboxes and labels for each profile.
+ */
 const renderProfiles = () => {
   const checkboxContainer = document.getElementById('checkbox-container');
 
-  // Limpiar el contenedor antes de agregar los nuevos perfiles
   checkboxContainer.innerHTML = '';
-
-  // Recorrer el array de perfiles y crear los elementos de checkbox
   profiles.forEach((profile) => {
     const valorInputPerfilDiv = document.createElement('div');
     valorInputPerfilDiv.classList.add('valorinputperfil');
@@ -31,14 +31,17 @@ const renderProfiles = () => {
   });
 };
 
-window.addEventListener('load', () => {
-  getData();
-});
-
+/**
+ * Retrieves the profiles from the API and renders them.
+ */
 const getData = async () => {
   profiles = await getProfiles('../backend');
   renderProfiles();
 };
+
+/**
+ * Registers a user by creating a user and associating selected profiles with the user.
+ */
 
 const register = async () => {
   const name = document.getElementById('name').value;
@@ -52,16 +55,19 @@ const register = async () => {
     lastName,
     email,
     telephone,
-    password
+    password,
   });
 
-  const checkboxes = [...document.querySelectorAll('.checkboxprofiles:checked')];
-  const values = checkboxes.map(checkbox => checkbox.value);
+  const checkboxes = Array.from(document.querySelectorAll('.checkboxprofiles:checked'));
 
-  for (const value of values) {
-    await addProfileToUser(id, value);
-  }
+  checkboxes.forEach(async (checkbox) => {
+    await addProfileToUser(id, checkbox.value);
+  });
   window.location.href = './login.php';
 };
+
+window.addEventListener('load', () => {
+  getData();
+});
 
 window.register = register;

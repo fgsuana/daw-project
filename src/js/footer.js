@@ -1,17 +1,25 @@
-// Mostrar el botón cuando se desplaza hacia abajo
-window.addEventListener('scroll', scrollFunction);
-
+/**
+ * Sets the display style of the "my-button" element based on the scroll position.
+ * If the scroll position is greater than 20 pixels, the element is displayed; otherwise, it is hidden.
+ * @returns {void}
+ */
 function scrollFunction() {
-  var myButton = document.getElementById("myButton");
+  const myButton = document.getElementById('my-button');
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    myButton.style.display = "block";
+    myButton.style.display = 'block';
   } else {
-    myButton.style.display = "none";
+    myButton.style.display = 'none';
   }
 }
 
-// Ir al principio de la página cuando se hace clic en el botón
+/**
+ * Scrolls the page to the top when the "my-button" element is clicked.
+ * @returns {void}
+ */
+// eslint-disable-next-line no-unused-vars
 function goToTop() {
-  document.body.scrollTop = 0; // Para Safari
-  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
+
+window.addEventListener('scroll', scrollFunction);

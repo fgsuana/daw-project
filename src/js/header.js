@@ -1,3 +1,9 @@
+/**
+ * Checks the login status and shows/hides elements accordingly.
+ * Retrieves login information stored in local storage.
+ * Updates DOM elements based on the login status.
+ * @returns {void}
+ */
 const checkLogging = () => {
   const isLogged = localStorage.getItem('isLogged');
   const publishElement = document.getElementById('publish-project');
@@ -6,8 +12,7 @@ const checkLogging = () => {
   const userNameText = document.getElementById('user-name-text');
   const userName = document.getElementById('user-name');
   const userNameAdmin = document.getElementById('user-name-admin');
-  const idregistro = document.getElementById("idregistro");
-
+  const idregistro = document.getElementById('idregistro');
 
   if (isLogged === 'true') {
     publishElement.style.display = 'inline-block';
@@ -16,7 +21,7 @@ const checkLogging = () => {
     loginElement.style.display = 'none';
     userName.textContent = localStorage.getItem('userName');
     idregistro.style.display = 'none';
-    if(userNameAdmin) {
+    if (userNameAdmin) {
       userNameAdmin.textContent = localStorage.getItem('userName');
     }
   } else {
@@ -27,9 +32,14 @@ const checkLogging = () => {
   }
 };
 
+/**
+ * Logs out the user by updating the login status in local storage
+ * and redirects the user to the index.php page.
+ * @returns {void}
+ */
 const logout = () => {
   localStorage.setItem('isLogged', 'false');
-  checkLogging();
+  window.location.href = './index.php';
 };
 
 window.logout = logout;

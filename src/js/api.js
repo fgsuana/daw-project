@@ -1,6 +1,6 @@
 export const getProfiles = async () => {
   try {
-    const response = await fetch(`../backend/profile/get_perfiles.php`, {
+    const response = await fetch('../backend/profile/get_perfiles.php', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -84,7 +84,7 @@ export const getProfilesByProjectId = async (id) => {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
-        id
+        id,
       }),
     });
     const data = await response.json();
@@ -103,7 +103,6 @@ export const createUser = async (user) => {
       },
       body: JSON.stringify(user),
     });
-    
     if (!response.ok) {
       throw new Error('Error al insertar el usuario');
     }

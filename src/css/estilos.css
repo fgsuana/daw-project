@@ -47,8 +47,8 @@ body {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 25px 30px 0 30px;
-    border-color: #146C94 transparent transparent transparent;
+    border-width: 25px 30px 0;
+    border-color: #146C94 transparent transparent;
     left: 50%;
     transform: translateX(-50%) translateY(100%);
 }
@@ -79,7 +79,7 @@ span.mainhomejobtitle {
 }
 
 span.mainhomejobsubtitle {
-    color: #000000;
+    color: #000;
     font-size: 13px;
 }
 
@@ -90,15 +90,13 @@ span.mainhomejobsubtitle {
 .step {
     margin:1.5%;
 }
-.mainhomejobs {
-    display: flex;
-}
 
 .profiles {
     font-size: 10px;
     text-align: center;
     margin: 5%;
 }
+
 .profiles button {
     padding: 3%;
     margin: 2%;
@@ -109,6 +107,7 @@ span.mainhomejobsubtitle {
     border: none;
     border-radius: 4px;
 }
+
 .bannerimg p{
     color: #000;
 }
@@ -178,6 +177,7 @@ span.registeralert {
     right: -1.5%;
     top: 60%;
   }
+
   .wave::after {
     width: 55%;
     height: 100%;
@@ -215,11 +215,7 @@ span.iconoinput {
     text-align: center;
 }
 
-footer{
-    background-color: #146C94;
-    color: #F6F1F1;
 
-}
 
 footer i, span{
     color: #F6F1F1;
@@ -230,6 +226,24 @@ footer i{
     color: #F6F1F1;
     cursor: pointer;
     
+}
+
+.iconoregistro1 i{
+    font-size: 40px;
+    margin-top: 40px;
+    color: #F6F1F1;
+}
+
+.iconoregistro2 i {
+    font-size: 270px;
+    color: #146c94;
+    margin-top: 80px;
+}
+
+.boxcontact i{
+    margin-bottom: 10px;
+    color: #19A7CE;
+    font-size: 30px;
 }
 
 footer i:hover{
@@ -274,15 +288,14 @@ input[type="submit"]:hover {
     border: none;
 }
 
-/*Boton scroll to top*/
-#myButton {
+/* Boton scroll to top */
+#my-button {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 99;
     padding: 10px 20px;
-    font-size: 16px;
     font-weight: bold;
     color: #fff;
     background-color: #7AA874;
@@ -290,12 +303,12 @@ input[type="submit"]:hover {
     border-radius: 5px;
     outline: none;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 30%);
     font-size: 25px;
     height: 50px;
   }
 
-  #myButton:hover {
+  #my-button:hover {
     background-color: #146C94;
   }
 
@@ -352,22 +365,6 @@ Verde oscuro (#7AA874): Para botones y complementos.
 
 .color1{
     background-color: #146C94;
-}
-
-.iconoregistro1 i{
-    font-size: 40px;
-    margin-top: 40px;
-    color: #F6F1F1;
-}
-
-.iconoregistro2 i {
-    font-size: 270px;
-    color: #146c94;
-    margin-top: 80px;
-}
-
-.principalregistro .textoregistro , .principalregistro p{
-    color: #F6F1F1;
 }
 
 .principalregistro .textoregistro h2 {
@@ -445,34 +442,34 @@ button.boton-inicio.d-inline-block {
 }
   
 .trabajo.dessoft {
-    background-image: url(https://cdn.techtitute.com/portal-blog/Metodologias-agiles-para-el-desarrollo-de-software-Scrum-scaled.jpg);
+    background-image: url("https://cdn.techtitute.com/portal-blog/Metodologias-agiles-para-el-desarrollo-de-software-Scrum-scaled.jpg");
     background-size: cover;
 }
 
 
 .trabajo.seginf {
-    background-image: url(https://tarroba.net/wp-content/uploads/2022/11/Dia-Internacional-de-la-Seguridad-Informatica-900x444.jpg);
+    background-image: url("https://tarroba.net/wp-content/uploads/2022/11/Dia-Internacional-de-la-Seguridad-Informatica-900x444.jpg");
     background-size: cover;
 }
 
 .trabajo.adbd {
-    background-image: url(https://www.nextu.com/blog/wp-content/uploads/sites/4/2019/09/bases-de-datos-nosql.png);
+    background-image: url("https://www.nextu.com/blog/wp-content/uploads/sites/4/2019/09/bases-de-datos-nosql.png");
     background-size: cover;
 }
 
 .trabajo.andat {
-    background-image: url(https://www.nunsys.com/wp-content/uploads/2021/07/shutterstock_230958076-759x500-1.jpg);
+    background-image: url("https://www.nunsys.com/wp-content/uploads/2021/07/shutterstock_230958076-759x500-1.jpg");
     background-size: cover;
 }
 
 .trabajo.ingred {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e5/Network_switches.jpg);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e5/Network_switches.jpg");
     background-size: cover;
 }
 
 
 .trabajo.adsist {
-    background-image: url(https://ednon.com/wp-content/uploads/2020/01/soporte-ednon.jpeg);
+    background-image: url("https://ednon.com/wp-content/uploads/2020/01/soporte-ednon.jpeg");
     background-size: cover;
 }
 
@@ -541,7 +538,7 @@ button.boton-inicio.d-inline-block {
 
 .perfildevmatch {
     font-size: 10px;
-    margin: 9px 0px;
+    margin: 9px 0;
 }
 
 .botonacepreg:hover{
@@ -701,6 +698,8 @@ margin-left:2%;
 footer {
     text-align: center;
     padding: 2%;
+    background-color: #146C94;
+    color: #F6F1F1;
 }
 
 .trabajodescrp {
@@ -816,8 +815,8 @@ img.stepimg {
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 17px 20px 10px 20px;
-        border-color: #146C94 transparent transparent transparent;
+        border-width: 17px 20px 10px;
+        border-color: #146C94 transparent transparent;
         left: 50%;
         transform: translateX(-50%) translateY(100%);
     }
@@ -829,7 +828,7 @@ img.stepimg {
     }
 
     .principalregistro .textoregistro h2 {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .mitad {
@@ -936,9 +935,9 @@ input[type="text"] {
 .boxcontact {
     width: 300px; /* Ajusta el tamaño según tus necesidades */
     height: 150px; /* Ajusta el tamaño según tus necesidades */
-    background-color: #ffffff; /* Color de fondo del div */
+    background-color: #fff; /* Color de fondo del div */
     border-radius: 5px; /* Ajusta el radio según tus necesidades */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2); /* Estilo de sombra del div */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 40%), 0 4px 6px rgba(0, 0, 0, 20%); /* Estilo de sombra del div */
     margin: 100px; /* Ajusta el margen entre las cajas */
     padding: 20px; /* Ajusta el espaciado interno según tus necesidades */
   }
@@ -954,11 +953,7 @@ input[type="text"] {
   }
   
 
-  .boxcontact i{
-    margin-bottom: 10px;
-    color: #19A7CE;
-    font-size: 30px;
-  }
+
 
   .padremapform {
     display: flex;
@@ -986,7 +981,7 @@ input[type="text"] {
 }
 
 .imagencontact{
-    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url(../img/contacto.jpg);
+    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url("../img/contacto.jpg");
     background-image: cover;
     background-size: cover;
     background-position: center center;
@@ -1010,7 +1005,7 @@ input[type="text"] {
 
     
 .imgsobrenosotros{
-    background: url(../img/equipo.jpg);
+    background: url("../img/equipo.jpg");
     background-image: cover;
     background-size: cover;
     background-position: center center;
@@ -1026,12 +1021,12 @@ input[type="text"] {
 /* Final Sobre Nosotros */
 
 
-/*Inicio admin*/
+/* Inicio admin */
 
 .fotoblogadm{
-    background-image: url(../img/blogfoto.png);
+    background-image: url("../img/blogfoto.png");
     width: 200px;
     height: 200px;
 }
 
-/*Fin admin*/
+/* Fin admin */
