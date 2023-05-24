@@ -15,7 +15,7 @@
     <?php include 'header.php'; ?>
     </header>
     <main class="mainbox">
-    <div class="inputformproyecto d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="inputformproyecto d-flex align-items-center justify-content-center" >
         <div class="container">
             <h1 class="text-white text-center">Formulario para crear un proyecto</h1>
             <div >
