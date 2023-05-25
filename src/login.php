@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Login</title>
+    <title>Panel de usuarios</title>
 </head>
 <?php include 'header.php'; ?>
 <body>
@@ -21,8 +21,8 @@
                 <div class="col-md-6">
                     
                     <div class="text-center p-5">
-                        <h2 class="mb-5">Por favor logeate</h2>
-                        <input type="text" class="form-control text-center" placeholder="Introduce Tu Email" required>
+                        <h2 class="mb-5">Panel de usuarios</h2>
+                        <input type="email" class="form-control text-center" placeholder="Introduce tu correo: correo@gmail.com" required>
                         <input type="password" class="form-control text-center mt-5" placeholder="Introduce tu contraseña" required>
                         <button type="submit" class="btn color mt-5" onclick="doLogin()">Login</button>
                     </div>
