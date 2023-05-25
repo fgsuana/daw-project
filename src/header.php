@@ -36,7 +36,7 @@
                 Publicar proyecto</a>
             </li>
             <li class="nav-item mx-5">
-              <a class="nav-link text-white" href="./contacto.php"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Contacto</a>
+              <a class="nav-link text-white" href="./contacto.php"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contacto</a>
             </li>
             <li class="nav-item mx-5">
               <a class="nav-link text-white" href="./sobre-nosotros.php"><i class="fa-solid fa-circle-info" style="color: #ffffff;"></i> Sobre nosotros</a>
