@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevMatch</title>
-   <link rel="icon" type="image/png" href="./img/logo.png">
+   <link rel="icon" type="image/png" href="https://www.itcmadi.com/devmatch1/blog/wp-content/uploads/2023/05/logo.jpg">
 </head>
 
 <body>
