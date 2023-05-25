@@ -318,7 +318,7 @@ input[type="submit"]:hover {
 
 .principal{
     background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url('../img/bg-login.jpg');
-    height: 100vh;
+    height: auto;
     background-size: cover;
     background-position: center center;
 }
@@ -754,7 +754,7 @@ footer {
 .blogimg {
     display: block;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 330px;
 }
 
 img.stepimg {
@@ -762,6 +762,12 @@ img.stepimg {
     padding: 4%;
     margin: 4%;
 }
+
+section.trabajos-activos {
+    display: flex;
+}
+
+section.trabajos-activos .trabajo {margin:3%;}
 
 @media (max-width: 500px) {
     .trabajos {
@@ -774,6 +780,11 @@ img.stepimg {
         width: 80%;
     }
 
+
+    section.trabajos-activos .trabajo {
+        margin: 9% 3%;
+    }
+
     .activeprojects {
         border-collapse: collapse;
         width: 100%;
@@ -781,6 +792,10 @@ img.stepimg {
         padding: 3%;
         margin-bottom: 5%;
         margin-top: 5%;
+    }
+
+    section.trabajos-activos {
+        display: block;
     }
 
     .trabajo {
