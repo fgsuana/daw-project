@@ -23,8 +23,8 @@
                     
                     <div class="text-center p-5">
                         <h2 class="mb-5">Panel de usuarios</h2>
-                        <input type="email" class="form-control text-center" placeholder="Introduce tu correo: correo@gmail.com" required>
-                        <input type="password" class="form-control text-center mt-5" placeholder="Introduce tu contraseña" required>
+                        <input id="email" type="email" class="form-control text-center" placeholder="Introduce tu correo: correo@gmail.com" required>
+                        <input id="password" type="password" class="form-control text-center mt-5" placeholder="Introduce tu contraseña" required>
                         <button type="submit" class="btn color mt-5" onclick="doLogin()">Login</button>
                     </div>
 
