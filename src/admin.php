@@ -10,6 +10,7 @@
     <title>Contacto</title>
 </head>
 <body>
+
     <script>
         const isLogged = localStorage.getItem('isLogged');
         if (isLogged === 'false') {
@@ -18,7 +19,7 @@
     </script>
 
     <?php include 'header.php'; ?>
-
+    <main class="mainbox">
     <div class="container-fluid mb-5">
         <h4 class="text-center mt-5">Bienvenido a tu Panel de Control <span style="color:black" id="user-name-admin"></span></h4>
 
@@ -42,4 +43,5 @@
     </div>
     
     <script type="module" src="./js/admin.js"></script>
+    </main>
     <?php include_once './footer.php'; ?>
