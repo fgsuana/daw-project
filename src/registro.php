@@ -51,7 +51,7 @@
 
                         <label class="mt-5 form-check-label">
                             <input class="form-check-input me-2" type="checkbox" name="checkbox" id="politicas" required>
-                            Aceptar los <a href="TerminosCondiciones.html">Términos y Condiciones</a>
+                            Aceptar los <a href="./terminos-condiciones.php">Términos y Condiciones</a>
                         </label>
                           
                         <div>
