@@ -15,6 +15,7 @@
     <section class="principal d-flex justify-content-center align-items-center">
 
         <div class="container containerlogin">
+            <p id="alert-message"></p>
 
             <div class="row">
 
