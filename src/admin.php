@@ -1,47 +1,1047 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <title>Contacto</title>
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
 
-    <script>
-        const isLogged = localStorage.getItem('isLogged');
-        if (isLogged === 'false') {
-            window.location.href = './index.php';
-        }
-    </script>
+body {
+    font-family: Arial, sans-serif;
+}
 
-    <?php include 'header.php'; ?>
-    <main class="mainbox">
-    <div class="container-fluid mb-5">
-        <h4 class="text-center mt-5">Bienvenido a tu Panel de Control <span style="color:black" id="user-name-admin"></span></h4>
+.navcontrol{
+    background-color: #146c94;
+}
 
-        <div>
-            <h2>Tus proyectos activos</h2>
-            <section class="trabajos-activos"></section>
-        </div>
-        
-        <div class="row">
-            <div>
-                <h2>Únete a otro proyecto</h2>
-                <section class="trabajos"></section>
-            </div>
-            <div>
-                <h2 class="mb-4">Visita el blog para enterarte de todo</h2>
-   <p>En nuestro blog estarás informado sobre las últimas novedades en el sector IT y podrás encontrar consejos para ser un mejor profesional.</p>
-         <a href="https://www.itcmadi.com/devmatch1/blog/"><img src="./img/blogbanner.png" class="blogimg"></a>
-            </div>
-        </div>
+.logonav{
+    width: 150px;
+    height: 90px;
+}
 
-    </div>
+.mainbox h1 {
+    margin-top: 5%;
+}
+
+.mainbox {
+    padding: 1.5rem!important;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.triangle {
+    position: relative;
+    background: #146C94;
+    height: auto;
+  }
+  
+.profile-row {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 3%;
+}
+
+  .triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 30px 0;
+    border-color: #146C94 transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
+
+form.buscadorhome {
+    text-align: center;
+}
+
+main.mainbox {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.bannerimg{
+    margin-top: 100px;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+span.mainhomejobtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: #286d93;
+}
+
+span.mainhomejobsubtitle {
+    color: #000;
+    font-size: 13px;
+}
+
+.steps {
+    display: flex;
+}
+
+.step {
+    margin:1.5%;
+}
+
+.profiles {
+    font-size: 10px;
+    text-align: center;
+    margin: 5%;
+}
+
+.profiles button {
+    padding: 3%;
+    margin: 2%;
+    width: 50%;
+    background: #7AA874;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.bannerimg p{
+    color: #000;
+}
+
+.col-xl-6.mitad.color2 {
+    height: auto;
+}
+
+.mt-5 {
+    margin-top: 3rem!important;
+    text-align: left;
+}
+
+span.registeralert {
+    color: #000;
+    font-size: 12px;
+}
+
+.trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.trabajo {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    min-height: 250px;
+    flex-basis: 30%;
+}
+
+
+.mainhomejobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.cajahomejobs {
+    text-align: center;
+}
+
+.wave {
+    position: absolute;
+    height: 36px;
+    width: 100%;
+    background: #2c3e50;
+    bottom: 0;
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+  }
+  
+  .wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+  }
+
+  .wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #2c3e50;
+    left: -1.5%;
+    top: 40%;
+  }
+
+
+  .prefooter.spikes{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  h3.prefooterh3 {
+    color: #333;
+}
+
+span.iconoinput {
+    padding: 2%;
+}
+
+.imgfooter {
+    width: auto;
+}
+
+
+#hero-image {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.legalfooter {
+    text-align: center;
+}
+
+
+
+footer i, span{
+    color: #F6F1F1;
     
-    <script type="module" src="./js/admin.js"></script>
-    </main>
-    <?php include_once './footer.php'; ?>
+}
+
+footer i{
+    color: #F6F1F1;
+    cursor: pointer;
+    
+}
+
+.iconoregistro1 i{
+    font-size: 40px;
+    margin-top: 40px;
+    color: #F6F1F1;
+}
+
+.iconoregistro2 i {
+    font-size: 270px;
+    color: #146c94;
+    margin-top: 80px;
+}
+
+.boxcontact i{
+    margin-bottom: 10px;
+    color: #19A7CE;
+    font-size: 30px;
+}
+
+footer i:hover{
+    color: #19A7CE;
+    transform: scale(1.4); /* Escala el elemento al 120% */
+}
+
+
+footer a{
+    color: #F6F1F1;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #19A7CE;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+  
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+  
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7AA874;
+    color: #F6F1F1;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #146C94;
+    color: #F6F1F1;
+    border: none;
+}
+
+/* Boton scroll to top */
+#my-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #7AA874;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 30%);
+    font-size: 25px;
+    height: 50px;
+  }
+
+  #my-button:hover {
+    background-color: #146C94;
+  }
+
+
+
+/* Inicio Login */
+
+.principal{
+    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url('../img/bg-login.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.principal .color{
+    background-color: #7AA874;
+    border-radius: 30px;
+    padding: 11px 50px;
+}
+
+.principal .color:hover{
+    background-color: #19A7CE;
+    color: white;
+}
+  
+.principal h2,h4{
+    color: white;
+}
+
+.principal .bloque2 h2,h4, .bloque2 p {
+    color: black;
+    font-weight: bold;
+}
+
+.principal .bloque2 .color:hover{
+    background-color: #146C94;
+    color: white;
+}
+
+/* Fin Login */
+
+/*
+  Azul oscuro ((#146C94): 60%
+Blanco (#F6F1F1): 30%
+Azul claro (#19A7CE): 10%
+Verde oscuro (#7AA874): Para botones y complementos.
+*/
+
+/* Inicio Registro */
+
+.mitad{
+    height: 100vh;
+}
+
+.color1{
+    background-color: #146C94;
+}
+
+.principalregistro .textoregistro h2 {
+    color:#000;
+}
+
+.principalregistro .textoregistro, .principalregistro p {
+    color: #000;
+}
+
+
+.color2{
+    background-color: #7AA874;
+}
+
+.boton-inicio{
+    background-color: #19A7CE;
+    border-radius: 40px 0 0 40px;
+    border: none; 
+    padding: 10px;
+}
+
+.boton-inicio:hover{
+    background-color: #146c94;
+    color: #F6F1F1;
+}
+
+button.me-3.boton-registro.d-inline-block {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+button.boton-inicio.d-inline-block {
+    color: #fff;
+    font-weight: bold;
+}
+
+.boton-registro{
+    background-color: #146C94;
+    border-radius: 0 40px 40px 0; 
+    border: 0.5px solid black; 
+    padding: 10px;
+    color: #F6F1F1;
+}
+
+.boton-registro:hover{
+    background-color: #7AA874;
+    color: #F6F1F1;
+    color:#000;
+}
+
+.content-regis{
+    margin:4%;
+    margin-left: 50px;
+    color: #F6F1F1;
+}
+
+.content-regis label{
+    color: #F6F1F1;
+}
+
+.body-registro{
+    overflow-x: hidden;
+}
+
+
+.body-registro .form-control {
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    background-color: #7AA874;
+    width: 450px;
+    color: #F6F1F1;
+}
+  
+.trabajo.dessoft {
+    background-image: url("https://cdn.techtitute.com/portal-blog/Metodologias-agiles-para-el-desarrollo-de-software-Scrum-scaled.jpg");
+    background-size: cover;
+}
+
+
+.trabajo.seginf {
+    background-image: url("https://tarroba.net/wp-content/uploads/2022/11/Dia-Internacional-de-la-Seguridad-Informatica-900x444.jpg");
+    background-size: cover;
+}
+
+.trabajo.adbd {
+    background-image: url("https://www.nextu.com/blog/wp-content/uploads/sites/4/2019/09/bases-de-datos-nosql.png");
+    background-size: cover;
+}
+
+.trabajo.andat {
+    background-image: url("https://www.nunsys.com/wp-content/uploads/2021/07/shutterstock_230958076-759x500-1.jpg");
+    background-size: cover;
+}
+
+.trabajo.ingred {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e5/Network_switches.jpg");
+    background-size: cover;
+}
+
+
+.trabajo.adsist {
+    background-image: url("https://ednon.com/wp-content/uploads/2020/01/soporte-ednon.jpeg");
+    background-size: cover;
+}
+
+.titlerama {
+    background: #2a2a2a96;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.titlerama h3 {
+    color: #fff;
+    text-align: center;
+}
+
+
+.spikes {
+    position: relative;
+    background: #f5f5f5;
+    height: auto;
+    padding:2%;
+  }
+  
+  .spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #f5f5f5 25%, transparent 25%), linear-gradient(225deg, #f5f5f5 25%, transparent 25%);
+    background-position: 0 0;
+  }
+  
+.body-registro .form-control::placeholder {
+    color: #F6F1F1;
+    opacity: 0.7;
+    text-align: left;
+}
+
+
+.body-registro .form-control:focus {
+    box-shadow: none; /* Elimina la sombra del input cuando está enfocado */
+}
+
+.body-registro .form-control:focus::placeholder {
+    color: transparent;
+}
+
+.botonacepreg {
+    background-color: #146c94;
+    border: none;
+    font-weight: 700;
+    padding: 3%;
+    border-radius: 20px;
+    color: #F6F1F1;
+    margin: 0 auto;
+    display: block;
+}
+
+.inputformproyecto input, .inputformproyecto select, .inputformproyecto textarea {
+    color: #000!important;
+}
+
+.perfildevmatch {
+    font-size: 10px;
+    margin: 9px 0;
+}
+
+.botonacepreg:hover{
+    border: 0.5px solid black; 
+    background-color: #19A7CE;
+    color:#000;
+}
+
+.consultaresult {
+    padding: 3%;
+    text-align: center;
+    margin: 2.5% 0%;
+}
+
+img.imghome {
+    width: auto;
+}
+
+
+
+button.unirsebtn {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.checkboxprofiles{
+    margin: 10px 6px 10px 15px;
+    transform: scale(1.5);
+    font-size: 20px;
+}
+
+.checkboxprofiles:checked {
+    background-color: #7AA874;
+}
+
+
+#politicas {
+    transform: scale(1.5); /* aumenta el tamaño del checkbox al doble */
+  }
+  
+#politicas + a {
+    color: white; /* cambia el color del texto de la etiqueta "a" a blanco */
+}
+
+
+.form-check-input:checked {
+    background-color: #7AA874;
+}
+
+
+/* Inicio Cookies */
+
+.cookiesbanner{
+    background-color: #146C94;
+}
+
+.aceptarcookies{
+    background-color: #7AA874;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+:hover.aceptarcookies{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.masinfocookies{
+    background-color: #19A7CE;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+}
+
+:hover.masinfocookies{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.modal-title {
+    text-align: center;
+    color: black;
+    margin: auto;
+  }
+  
+  
+  .modal-body p {
+    color: black;
+  }
+
+
+.botoncerrar{
+    background-color: #146C94;
+    padding: 2%;
+    border-radius: 10px;
+    color: #F6F1F1;
+    border: none;
+  }
+
+:hover.botoncerrar{
+    background-color: #19A7CE;
+    padding: 2%;
+    border-radius: 10px;
+    color: #000;
+    border: none;
+}
+
+.colorspan{
+    color: #F6F1F1;
+}
+
+/* Final Cookies */
+
+/* Inicio pagina publicar proyecto */
+
+.bodypubproyecto{
+    background: linear-gradient(to right, rgba(0, 0, 0, 90%), rgba(0, 0, 0, 90%)), url('../img/bg-pubproyecto.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.colorwhite{
+    color: #F6F1F1;
+}
+
+.botonenviar{
+    background-color: #7AA874;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+:hover.botonenviar{
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.inputformproyecto label{
+    font-size: 1.5em;
+}
+
+i.fa-brands {
+    font-size: 25px;
+    margin: 2%;
+}
+
+.legalfooter span {
+margin-left:2%;
+}
+
+footer {
+    text-align: center;
+    padding: 2%;
+    background-color: #146C94;
+    color: #F6F1F1;
+}
+
+.trabajodescrp {
+    font-size: 12px;
+    padding:1rem;
+}
+
+.trabajotitle {
+    font-size: 23px;
+    font-weight: bold;
+    padding: 3%;
+    text-align: center;
+    background: #e2e2e2;
+}
+
+.consultadescripcion {
+    padding: 3%;
+    margin: 1.5% 0%;
+}
+
+.activeprojects {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    padding: 3%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.activeprojects th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.activeprojects td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.activeprojects tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.activeprojects tr:hover {
+    background-color: #e6e6e6;
+}
+
+.blogimg {
+    display: block;
+    margin: 0 auto;
+    max-width: 330px;
+}
+
+img.stepimg {
+    max-width: 190px;
+    padding: 4%;
+    margin: 4%;
+}
+
+section.trabajos-activos {
+    display: flex;
+}
+
+section.trabajos-activos .trabajo {margin:3%;}
+
+@media (max-width: 500px) {
+    .trabajos {
+        display: block;
+        width: 100%;
+        padding:1rem;
+    }
+    
+    img.imghome {
+        width: 80%;
+    }
+
+
+    section.trabajos-activos .trabajo {
+        margin: 9% 3%;
+    }
+
+    .activeprojects {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 11px;
+        padding: 3%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    section.trabajos-activos {
+        display: block;
+    }
+
+    .trabajo {
+        margin: 8% 0%;
+    }
+
+    main.mainbox {
+        margin-top: 25%;
+    }
+
+    .social-icons {
+        margin-top: 7%;
+    }
+
+    .imgfooter {
+        width: 80%;
+    }
+
+    .bannerimg {
+        margin-top: 130px; 
+    }
+    
+    .steps {
+        display: block;
+    }
+
+
+    .triangle::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 17px 20px 10px;
+        border-color: #146C94 transparent transparent;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
+    }
+
+    .iconoregistro2 i {
+        font-size: 100px;
+        color: #F6F1F1;
+        margin-top:20px;
+    }
+
+    .principalregistro .textoregistro h2 {
+        margin-top: 0;
+    }
+
+    .mitad {
+        height: auto;
+        padding: 5%;
+    }
+
+    .text-end {
+        text-align: center!important;
+        margin-bottom: 10%!important;
+    }
+
+    .boton-inicio {
+        background-color: #19A7CE;
+        border-radius: 40px 0 0 40px;
+        border: none;
+        padding: 10px;
+    }
+
+    .boton-registro {
+        background-color: #146C94;
+        border-radius: 0 40px 40px 0;
+        border: none;
+        padding: 10px;
+        color: #F6F1F1;
+    }
+
+    button.boton-inicio.d-inline-block {
+        color: #fff;
+        font-weight: bold;
+        padding: 5%;
+    }
+
+    button.me-3.boton-registro.d-inline-block {
+        color: #fff;
+        font-weight: bold;
+        padding: 5%;
+    }
+
+    .content-regis {
+        margin: 5% 2% 2% 4%;
+        color: #F6F1F1;
+        text-align: center;
+    }
+
+    .body-registro .form-control {
+width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    }
+
+    #hero-image{
+    height:50%;
+    }
+
+    .mainbox {
+        width:100%;
+    }
+    
+    
+input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        display: block;
+        width: 90%;
+        margin: 5% auto;
+        border: 1px solid #ccc;
+    }
+
+    
+    
+    input[type="submit"] {
+    margin: 0 auto;
+    display: block;
+}
+    
+    
+    
+.legalfooter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
+
+.legalfooter span {
+    display: block;
+    margin-top: 4%;
+}
+
+    i.fa-brands {
+    width: 20%;
+    font-size: 25px;
+}
+    
+  }
+
+
+  
+/* Final pagina publicar proyecto */
+
+
+/* Inicio pagina contacto */
+.boxcontact {
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    background-color: #fff; /* Color de fondo del div */
+    border-radius: 5px; /* Ajusta el radio según tus necesidades */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 40%), 0 4px 6px rgba(0, 0, 0, 20%); /* Estilo de sombra del div */
+    margin: 100px; /* Ajusta el margen entre las cajas */
+    padding: 20px; /* Ajusta el espaciado interno según tus necesidades */
+  }
+  
+  .divscontact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido al principio del contenedor */
+    flex-wrap: wrap; /* Permite que las cajas se envuelvan en varias líneas */
+    margin-top: 50px; /* Ajusta el margen superior del contenedor */
+    margin-left: 20px; /* Ajusta el margen lateral izquierdo del contenedor */
+    margin-right: 20px; /* Ajusta el margen lateral derecho del contenedor */
+  }
+  
+
+
+
+  .padremapform {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+.form50{
+    display: flex;
+}
+
+.fromcontact input {
+    width: 400px;
+    margin-top: 10px;
+}
+
+.fromcontact textarea {
+    width: 873px;
+    margin-top: 10px;
+    resize: none;
+}
+
+.mapiframe{
+    margin-top: 10px;
+}
+
+.imagencontact{
+    background: linear-gradient(to right, rgba(20, 108, 148, 90%), rgba(25, 167, 206, 90%)), url("../img/contacto.jpg");
+    background-image: cover;
+    background-size: cover;
+    background-position: center center;
+    width: 2000px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.imagencontact h4{
+    color: #f5f5f5;
+}
+
+.imagencontact p{
+    color: #f5f5f5;
+}
+  
+/* Final contacto */
+
+
+/* Inicio Sobre Nosotros */
+
+    
+.imgsobrenosotros{
+    background: url("../img/equipo.jpg");
+    background-image: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-nosotros {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+
+/* Final Sobre Nosotros */
+
+
+/* Inicio admin */
+
+.fotoblogadm{
+    background-image: url("../img/blogfoto.png");
+    width: 200px;
+    height: 200px;
+}
+
+/* Fin admin */
