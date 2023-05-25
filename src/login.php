@@ -15,39 +15,31 @@
     <section class="principal d-flex justify-content-center align-items-center">
 
         <div class="container containerlogin">
-            <p id="alert-message"></p>
 
             <div class="row">
-
                 <div class="col-md-6">
-                    
                     <div class="text-center p-5">
                         <h2 class="mb-5">Panel de usuarios</h2>
                         <input id="email" type="email" class="form-control text-center" placeholder="Introduce tu correo: correo@gmail.com" required>
                         <input id="password" type="password" class="form-control text-center mt-5" placeholder="Introduce tu contraseña" required>
                         <button type="submit" class="btn color mt-5" onclick="doLogin()">Login</button>
                     </div>
-
                 </div>
-
                 <div class="col-md-6 bloque2">
-                    
                     <div class="text-center p-5">
-
                         <h2 class="text-white">¿No tienes una cuenta todavía?</h2>
                         <h4 class="mt-5">Proyectos, profesionales y más<s></s></h4>
                         <p class="mt-5">Conecta con otras personas para conseguir trabajar en equipo de forma eficaz y rentable.</p>
-
                         <a href="registro.html"><button type="submit" class="btn color mt-5">Regístrate</button></a>
-
                     </div>
 
                 </div>
 
             </div>
-
+            <p id="alert-message"></p>
         </div>
-    
+    <p id="alert-message" class="register-message"></p>
+
     </section>
     <section class="ramaslogin">
     <h2>¿En qué rama te gustaría participar?</h2>
