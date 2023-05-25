@@ -14,7 +14,7 @@
     
     <section class="principal d-flex justify-content-center align-items-center">
 
-        <div class="container">
+        <div class="container containerlogin">
 
             <div class="row">
 
@@ -33,7 +33,7 @@
                     
                     <div class="text-center p-5">
 
-                        <h2>¿No tienes una cuenta todavía?</h2>
+                        <h2 class="text-white">¿No tienes una cuenta todavía?</h2>
                         <h4 class="mt-5">Proyectos, profesionales y más<s></s></h4>
                         <p class="mt-5">Conecta con otras personas para conseguir trabajar en equipo de forma eficaz y rentable.</p>
 
@@ -46,7 +46,18 @@
             </div>
 
         </div>
-
+    
     </section>
+    <section class="ramaslogin">
+    <h2>¿En qué rama te gustaría participar?</h2>
+        <section class="trabajos rama">
+            <div class="trabajo dessoft"><div class="titlerama"><h3>Desarollo de software</h3></div></div>
+            <div class="trabajo ingred"><div class="titlerama"><h3>Ingeniería de redes</h3></div></div>
+            <div class="trabajo seginf"><div class="titlerama"><h3>Seguridad informática</h3></div></div>
+            <div class="trabajo adbd"><div class="titlerama"><h3>Administración de BD</h3></div></div>
+            <div class="trabajo andat"><div class="titlerama"><h3>Análisis de datos</h3></div></div>
+            <div class="trabajo adsist"><div class="titlerama"><h3>Administrador de sistemas</h3></div></div>
+        </section>
+</section>
     <script type="module" src="./js/login.js"></script>
     <?php include_once './footer.php'; ?>
