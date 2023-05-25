@@ -248,6 +248,7 @@ section.ramaslogin {
 .container.containerlogin {
     margin: 5%;
 }
+
 .boxcontact i{
     margin-bottom: 10px;
     color: #19A7CE;
@@ -788,6 +789,9 @@ section.trabajos-activos .trabajo {margin:3%;}
         width: 80%;
     }
 
+    .trabajo {
+        margin: 8% 0%;
+    }
 
     section.trabajos-activos .trabajo {
         margin: 9% 3%;
@@ -804,10 +808,6 @@ section.trabajos-activos .trabajo {margin:3%;}
 
     section.trabajos-activos {
         display: block;
-    }
-
-    .trabajo {
-        margin: 8% 0%;
     }
 
     main.mainbox {

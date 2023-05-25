@@ -67,10 +67,8 @@ export const login = async (email, password) => {
       localStorage.setItem('id', id);
 
       window.location.href = './index.php';
-    } else {
-      console.log('error');
     }
-    return 'login succesfull';
+    return success;
   } catch (error) {
     return error;
   }
