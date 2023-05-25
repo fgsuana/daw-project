@@ -6,6 +6,7 @@
             <span><a href="./aviso-legal.php">Aviso legal</a></span>
             <span><a href="./politica-cookies.php">Política de cookies</a></span>
             <span><a href="./politica-privacidad.php">Política de privacidad</a></span>
+            <span><a href="./terminos-condiciones.php">Términos y condiciones</a></span>
         </div>
 
 </footer>
