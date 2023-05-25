@@ -33,24 +33,24 @@
                 <div class="text-start">
                     <div class="content-regis">
                         <label for="nombre">NOMBRE COMPLETO</label>
-                        <input id="name" type="text" class="form-control text-start" placeholder="Introduce tu nombre">
+                        <input id="name" type="text" class="form-control text-start" placeholder="Introduce tu nombre" required>
 
                         <label class="mt-5" for="apellidos">Apellidos</label>
-                        <input id="lastName" type="text" class="form-control text-start" placeholder="Introduce tus apellidos">
+                        <input id="lastName" type="text" class="form-control text-start" placeholder="Introduce tus apellidos" required>
 
                         <label class="mt-5" for="nombre">CONTRASEÑA</label>
-                        <input id="password" type="password" class="form-control text-start" placeholder="*********">
+                        <input id="password" type="password" class="form-control text-start" placeholder="*********" required>
 
                         <label class="mt-5" for="nombre">E-MAIL</label>
-                        <input id="email" type="email" class="form-control text-start" placeholder="Introduce tu correo electrónico">
+                        <input id="email" type="email" class="form-control text-start" placeholder="Introduce tu correo electrónico" required>
                         
                         <label class="mt-5" for="nombre">TELÉFONO</label>
-                        <input id="telephone" type="tel" class="form-control text-start" placeholder="Introduce tu número de teléfono">
+                        <input id="telephone" type="tel" class="form-control text-start" placeholder="Introduce tu número de teléfono" required>
 
                         <div class="mt-5" id="checkbox-container"></div>
 
                         <label class="mt-5 form-check-label">
-                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="politicas">
+                            <input class="form-check-input me-2" type="checkbox" name="checkbox" id="politicas" required>
                             Aceptar los <a href="TerminosCondiciones.html">Términos y Condiciones</a>
                         </label>
                           

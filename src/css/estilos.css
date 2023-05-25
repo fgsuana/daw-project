@@ -336,6 +336,7 @@ input[type="submit"]:hover {
     background-color: #7AA874;
     border-radius: 30px;
     padding: 11px 50px;
+    color: white;
 }
 
 .principal .color:hover{
@@ -792,9 +793,44 @@ section.trabajos-activos .trabajo {margin:3%;}
     .trabajo {
         margin: 8% 0%;
     }
+    .boxcontact {
+        margin: 11px!important;
+    }
 
     section.trabajos-activos .trabajo {
         margin: 9% 3%;
+    }
+
+    .padremapform {
+        display: block!important;
+        margin-top: 58px;
+        margin-bottom: 100px;
+    }
+
+
+    .imagencontact {
+        width: auto!important;
+        padding: 4%!important;
+        margin: 8% auto!important;
+    }
+
+    .col-md-6.fromcontact {
+        padding: 3%;
+    }
+
+    .form50 {
+        display: block!important;
+    }
+
+    .fromcontact input {
+        width: 98%!important;
+        margin-top: 10px;
+    }
+
+    .fromcontact textarea {
+        width: 98%!important;
+        margin-top: 10px;
+        resize: none;
     }
 
     .activeprojects {
@@ -980,7 +1016,6 @@ input[type="text"] {
 
   .padremapform {
     display: flex;
-    margin-top: 100px;
     margin-bottom: 100px;
   }
 
