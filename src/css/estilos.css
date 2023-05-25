@@ -240,6 +240,14 @@ footer i{
     margin-top: 80px;
 }
 
+section.ramaslogin {
+    width: 80%;
+    margin: 4% auto;
+}
+
+.container.containerlogin {
+    margin: 5%;
+}
 .boxcontact i{
     margin-bottom: 10px;
     color: #19A7CE;
