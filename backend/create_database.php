@@ -126,7 +126,7 @@ if ($result->num_rows == 0) {
     echo "Error al insertar registros en la tabla de proyectos: " . $conn->error;
   }
 
-  // Creacion de proyecto 
+  // Creacion de proyectos
   $sql = "INSERT INTO proyecto ( nombre_proyecto, descripcion_proyecto, id_usuario_creador)
     VALUES 
     ('Realidad Virtual para smartTvs', 'La aplicación será para ver contenido de Realidad Virtual y aumentada en una televisión. Esta aplicación podrá funcionar con diferentes dispositivos de VR y AR, como gafas o cascos, y permitir a los usuarios disfrutar de una experiencia inmersiva en la comodidad de su hogar.

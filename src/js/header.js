@@ -42,8 +42,8 @@ const logout = () => {
   localStorage.setItem('isNewUser', 'false');
   window.location.href = './index.php';
 };
-
 window.logout = logout;
+
 window.addEventListener('load', () => {
   checkLogging();
 });

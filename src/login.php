@@ -30,14 +30,42 @@
                         <h2 class="text-white">¿No tienes una cuenta todavía?</h2>
                         <h4 class="mt-5">Proyectos, profesionales y más<s></s></h4>
                         <p class="mt-5">Conecta con otras personas para conseguir trabajar en equipo de forma eficaz y rentable.</p>
-                        <a href="registro.html"><button type="submit" class="btn color mt-5">Regístrate</button></a>
+                        <a href="registro.php"><button type="submit" class="btn color mt-5">Regístrate</button></a>
                     </div>
 
                 </div>
 
             </div>
             <p id="alert-message"></p>
+            <p id="alert-message2"></p>
         </div>
+        <style>
+        p#alert-message {
+            display: none;
+            background-color: #7AA874;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+
+        p#alert-message2 {
+            display: none;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+
+
+    </style>
     <p id="alert-message" class="register-message"></p>
 
     </section>

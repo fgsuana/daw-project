@@ -5,7 +5,7 @@ const doLogin = () => {
   const password = document.getElementById('password').value;
   login(email, password).then((success) => {
     if (!success) {
-      const element = document.getElementById('alert-message');
+      const element = document.getElementById('alert-message2');
       element.innerText = "CREDENCIALES NO VALIDAS"
       element.style.display = 'block';
       localStorage.setItem('isNewUser', 'true');
