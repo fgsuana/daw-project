@@ -63,6 +63,7 @@ const register = async () => {
   checkboxes.forEach(async (checkbox) => {
     await addProfileToUser(id, checkbox.value);
   });
+  localStorage.setItem('isNewUser', 'true');
   window.location.href = './login.php';
 };
 

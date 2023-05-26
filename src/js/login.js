@@ -8,7 +8,6 @@ const doLogin = () => {
       const element = document.getElementById('alert-message2');
       element.innerText = "CREDENCIALES NO VALIDAS"
       element.style.display = 'block';
-      localStorage.setItem('isNewUser', 'true');
       setTimeout(() => {
         element.style.display = 'none';
       }, 5000);
@@ -22,9 +21,9 @@ const checkIsNewUser = () => {
   if (isNewUser === 'true') {
     element.innerText = "USUARIO CREADO CORRECTAMENTE"
     element.style.display = 'block';
-    localStorage.setItem('isNewUser', 'true');
     setTimeout(() => {
       element.style.display = 'none';
+      localStorage.setItem('isNewUser', 'false');
     }, 5000);
   }
 };

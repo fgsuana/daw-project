@@ -39,7 +39,6 @@ const checkLogging = () => {
  */
 const logout = () => {
   localStorage.setItem('isLogged', 'false');
-  localStorage.setItem('isNewUser', 'false');
   window.location.href = './index.php';
 };
 window.logout = logout;
