@@ -1,4 +1,14 @@
-# Proyecto grupo 11 DAW
+# AUTORES
+
+__Joel, Ángel, Giancarlo__
+
+# DESCRIPCIÓN
+
+__DevMatch__ es una plataforma orientada a perfiles IT, cuyo objetivo es reunir talento en un determinado proyecto. Podrás desarrollar proyectos con personas especializadas en una rama concreta (Front-End, Back-End, SEO, Análisis de datos, Big Query...)
+
+:warning: Esta herramienta ha sido __diseñada y desarrollada como proyecto final del grado superior (TFG) de DAW__ :warning: .
+
+# ¿Cómo instalar el proyecto?
 
 1. Abrir XAMPP o WAMPP y activa Apache y MySQL
 2. Descargar el proyecto y lo metemos dentro de una carpeta en htocs
