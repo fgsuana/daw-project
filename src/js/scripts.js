@@ -32,8 +32,10 @@ function getCookies() {
   cookieStrings.forEach((cookieString) => {
     const [name, value] = cookieString.split('=');
     const cookieName = name.trim();
-    const cookieValue = decodeURIComponent(value.trim());
-    cookies[cookieName] = cookieValue;
+    if (cookieName) {
+      const cookieValue = decodeURIComponent(value.trim());
+      cookies[cookieName] = cookieValue;
+    }
   });
   return cookies;
 }
