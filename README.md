@@ -1,6 +1,10 @@
 # AUTORES
 
-__Joel, Ángel, Giancarlo__
+__Joel, Ángel, Giancarlo__ - Estudiantes del ciclo formativo de grado superior DAW 2022/2023
+
+![Autores](https://www.itcmadi.com/devmatch1/blog/wp-content/uploads/2023/05/rr-removebg-preview.png)
+
+![LinkiaFP](https://qualitasequity.com/images/clientes_impact/linkia_logo.png)
 
 # DESCRIPCIÓN
 
