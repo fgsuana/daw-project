@@ -1,6 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root1";
-$password = "rootroot";
+$servername = "localhost:3307";
+$username = "root";
+$password = "";
 $dbname = "devMatch";
 ?>

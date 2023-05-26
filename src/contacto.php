@@ -49,34 +49,33 @@
         
         <!-- Caja 2 = Formulario -->
         <div class="col-md-6 fromcontact">
-            
             <div class="col-md-6">
                 <h4>¡Contacta con nosotros!</h4>
             </div>
-
             <div class="form50">
                 <div class="col-md-6">
-                    <input type="text" class="form-control text-start" placeholder="Nombre">
+                    <input id="nombreInput" type="text" class="form-control text-start" placeholder="Nombre">
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control text-start" placeholder="Correo">
+                    <input id="correoInput" type="text" class="form-control text-start" placeholder="Correo">
                 </div>
             </div>
             <div class="form50">
                 <div class="col-md-6">
-                    <input type="text" class="form-control text-start" placeholder="Teléfono">
+                    <input id="telefonoInput" type="text" class="form-control text-start" placeholder="Teléfono">
                 </div>
                 <div class="col-md-6">
-                    <input type="text" class="form-control text-start" placeholder="Asunto">
+                    <input id="asuntoInput" type="text" class="form-control text-start" placeholder="Asunto">
                 </div>
             </div>
             <div>
                 <div>
-                    <textarea class="form-control text-start" cols="30" rows="15" placeholder="Mensaje"></textarea>
+                    <textarea id="mensajeInput" class="form-control text-start" cols="30" rows="15" placeholder="Mensaje"></textarea>
                 </div>
             </div>
             <input type="submit" value="Enviar mensaje" onclick="sendMessage()">
         </div>
+
     </div>
     <style>
         p#alert-message {
@@ -90,8 +89,69 @@
             padding: 1%;
             border-radius: 3px;
         }
+        p#alert-message-nombre {
+            display: none;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+        p#alert-message-correo {
+            display: none;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+        p#alert-message-telefono {
+            display: none;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+        p#alert-message-asunto {
+            display: none;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+        p#alert-message-mensaje {
+            display: none;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+            width: 30%;
+            text-align: center;
+            margin: 3% auto;
+            padding: 1%;
+            border-radius: 3px;
+        }
+
     </style>
     <p id="alert-message" class="register-message"></p>
+    <p id="alert-message-nombre" class="register-message-bad"></p>
+    <p id="alert-message-correo" class="register-message-bad"></p>
+    <p id="alert-message-telefono" class="register-message-bad"></p>
+    <p id="alert-message-asunto" class="register-message-bad"></p>
+    <p id="alert-message-mensaje" class="register-message-bad"></p>
     
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.468020003329!2d2.1659432321837278!3d41.385641364352495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f363144023%3A0xf75eff2ca4d80986!2sC.%20de%20Pelai%2C%207%2C%2008001%20Barcelona!5e0!3m2!1ses!2ses!4v1684937470887!5m2!1ses!2ses" width="100%" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 

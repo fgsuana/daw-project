@@ -3,11 +3,114 @@
  * @function sendMessage
  * @returns {void} Does not return a value.
  */
-const sendMessage = () => {
-  const element = document.getElementById('alert-message');
-  element.innerText = 'MENSAJE ENVIADO CORRECTAMENTE';
-  element.style.display = 'block';
-  setTimeout(() => {
-    element.style.display = 'none';
-  }, 5000);
-};
+/*
+function sendMessage() {
+  var nombre = document.getElementById("nombreInput").value;
+  var correo = document.getElementById("correoInput").value;
+  var telefono = document.getElementById("telefonoInput").value;
+  var asunto = document.getElementById("asuntoInput").value;
+  var mensaje = document.getElementById("mensajeInput").value;
+  
+  if (nombre !== "" && correo !== "" && telefono !== "" && asunto !== "" && mensaje !== "") {
+    const element = document.getElementById('alert-message');
+    element.innerText = 'MENSAJE ENVIADO CORRECTAMENTE';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 5000);
+  }else if (!nombre){
+    const element = document.getElementById('alert-message-nombre');
+    element.innerText = 'Rellena el campo nombre';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 3000);
+  }else if(!correo){
+    const element = document.getElementById('alert-message-correo');
+    element.innerText = 'Rellena el campo correo';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 3000);
+  }else if(!telefono){
+    const element = document.getElementById('alert-message-telefono');
+    element.innerText = 'Rellena el campo telefono';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 3000);
+  }else if(!asunto){
+    const element = document.getElementById('alert-message-asunto');
+    element.innerText = 'Rellena el campo asunto';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 3000);
+  }else if(!mensaje){
+    const element = document.getElementById('alert-message-mensaje');
+    element.innerText = 'Rellena el campo mensaje';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 3000);
+  }
+}
+*/
+
+function sendMessage() {
+  var nombre = document.getElementById("nombreInput").value;
+  var correo = document.getElementById("correoInput").value;
+  var telefono = document.getElementById("telefonoInput").value;
+  var asunto = document.getElementById("asuntoInput").value;
+  var mensaje = document.getElementById("mensajeInput").value;
+  
+  if (nombre !== "" && correo !== "" && telefono !== "" && asunto !== "" && mensaje !== "") {
+    const element = document.getElementById('alert-message');
+    element.innerText = 'MENSAJE ENVIADO CORRECTAMENTE';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 5000);
+  }
+
+  var camposVacios = [];
+  
+  if (nombre === "") {
+    camposVacios.push('nombre');
+  }
+  
+  if (correo === "") {
+    camposVacios.push('correo');
+  }
+  
+  if (telefono === "") {
+    camposVacios.push('telefono');
+  }
+  
+  if (asunto === "") {
+    camposVacios.push('asunto');
+  }
+  
+  if (mensaje === "") {
+    camposVacios.push('mensaje');
+  }
+  
+  if (camposVacios.length === 0) {
+    const element = document.getElementById('alert-message');
+    element.innerText = 'MENSAJE ENVIADO CORRECTAMENTE';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 5000);
+  } else {
+    camposVacios.forEach((campo) => {
+      const element = document.getElementById('alert-message-' + campo);
+      element.innerText = 'Rellena el campo ' + campo;
+      element.style.display = 'block';
+      setTimeout(() => {
+        element.style.display = 'none';
+      }, 3000);
+    });
+  }
+}
+
