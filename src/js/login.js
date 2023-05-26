@@ -11,7 +11,7 @@ const doLogin = () => {
   login(email, password).then((success) => {
     if (!success) {
       const element = document.getElementById('alert-message2');
-      element.innerText = 'CREDENCIALES NO VALIDAS';
+      element.innerText = 'CREDENCIALES NO VÁLIDAS';
       element.style.display = 'block';
       setTimeout(() => {
         element.style.display = 'none';
@@ -29,11 +29,11 @@ const checkIsNewUser = () => {
   const isNewUser = localStorage.getItem('isNewUser');
   const element = document.getElementById('alert-message');
   if (isNewUser === 'true') {
+    localStorage.setItem('isNewUser', 'false');
     element.innerText = 'USUARIO CREADO CORRECTAMENTE';
     element.style.display = 'block';
     setTimeout(() => {
       element.style.display = 'none';
-      localStorage.setItem('isNewUser', 'false');
     }, 5000);
   }
 };

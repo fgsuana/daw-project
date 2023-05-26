@@ -49,22 +49,31 @@ const register = async () => {
   const email = document.getElementById('email').value;
   const telephone = document.getElementById('telephone').value;
   const password = document.getElementById('password').value;
-
-  const { id } = await createUser({
-    name,
-    lastName,
-    email,
-    telephone,
-    password,
-  });
-
   const checkboxes = Array.from(document.querySelectorAll('.checkboxprofiles:checked'));
+  const isTermsChecked = document.getElementById('politicas').checked;
 
-  checkboxes.forEach(async (checkbox) => {
-    await addProfileToUser(id, checkbox.value);
-  });
-  localStorage.setItem('isNewUser', 'true');
-  window.location.href = './login.php';
+  if (name && lastName && email && telephone && password && checkboxes.length && isTermsChecked) {
+    const { id } = await createUser({
+      name,
+      lastName,
+      email,
+      telephone,
+      password,
+    });
+
+    checkboxes.forEach(async (checkbox) => {
+      await addProfileToUser(id, checkbox.value);
+    });
+    localStorage.setItem('isNewUser', 'true');
+    window.location.href = './login.php';
+  } else {
+    const element = document.getElementById('alert-message');
+    element.innerText = 'RELLENA TODOS LOS CAMPOS';
+    element.style.display = 'block';
+    setTimeout(() => {
+      element.style.display = 'none';
+    }, 5000);
+  }
 };
 
 window.addEventListener('load', () => {

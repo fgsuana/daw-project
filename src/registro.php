@@ -57,6 +57,7 @@
                         <div>
                         <button type="submit" class="btn botonacepreg mt-5" onclick="register()">Regístrame</button>
                         </div>
+                        <p id="alert-message"></p>
                     </div>
                 </div>
             </div>
