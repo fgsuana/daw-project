@@ -16,3 +16,7 @@ __DevMatch__ es una plataforma orientada a perfiles IT, cuyo objetivo es reunir 
 4. En fichero config.php - Cambiar usuario a root y password en blanco
 5. El nombre del servername es localhost y el nombre de la bd es devMatch
 6. Abrimos una terminal en nuestro id y ejecutamos npm i para instalar todos los modulos correspodientes
+
+```
+.npm i
+```
