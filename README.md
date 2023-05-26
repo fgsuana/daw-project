@@ -8,7 +8,7 @@ __DevMatch__ es una plataforma orientada a perfiles IT, cuyo objetivo es reunir 
 
 :warning: Esta herramienta ha sido __diseñada y desarrollada como proyecto final del grado superior (TFG) de DAW__ :warning: .
 
-# ¿Cómo instalar el proyecto?
+# ¿CÓMO INSTALAR EL PROYECTO?
 
 1. Abrir XAMPP o WAMPP y activa Apache y MySQL
 2. Descargar el proyecto y lo metemos dentro de una carpeta en htocs
@@ -26,3 +26,14 @@ $dbname = "devMatch";
 ```
 .npm i
 ```
+
+# OBJETIVO DEL DESARROLLO
+
+El propósito de esta plataforma es conectar a profesionales con habilidades y conocimientos diversos, con proyectos que requieran su participación. Los usuarios tendrán la posibilidad de publicar sus ideas de proyecto y esperar la postulación de profesionales relevantes. 
+
+Asimismo, podrán buscar proyectos en los que deseen participar y postularse.
+
+Para garantizar la privacidad y seguridad de los usuarios, se implementará un sistema de registro y login que solo permitirá el acceso a usuarios registrados. Asimismo, podrán mantener un perfil con información detallada acerca de sus habilidades y experiencia, para que los proyectos puedan encontrar a los profesionales adecuados.
+
+Con este proyecto nos gustaría fomentar la colaboración y el intercambio de conocimientos entre los profesionales del sector IT.
+
