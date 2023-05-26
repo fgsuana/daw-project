@@ -3,10 +3,10 @@ import { getProfiles, createProject, addProfileToProject } from './api.js';
 const profilesContainer = document.getElementById('categoria-proyecto');
 
 /**
- * Crea un proyecto de usuario con los perfiles seleccionados.
+ * Create a user project with the selected profiles.
  * @async
  * @function createUserProject
- * @returns {Promise<void>} No devuelve ningún valor explícito.
+ * @returns {Promise<void>} Does not return any explicit value.
  */
 const createUserProject = async () => {
   const name = document.getElementById('nombre-proyecto').value;
@@ -24,10 +24,9 @@ const createUserProject = async () => {
 };
 
 /**
- * Renderiza los perfiles en el contenedor especificado.
- * @function renderProfiles
- * @param {Array<object>} profiles - Los perfiles a renderizar.
- * @returns {void} No devuelve ningún valor.
+ * Render profiles on the page.
+ * @param {Array} profiles - An array of profiles.
+ * @returns {void} Does not return a value.
  */
 const renderProfiles = (profiles) => {
   const profilesHTML = profiles.map((profile) => `<div class="perfildevmatch">
@@ -38,10 +37,10 @@ const renderProfiles = (profiles) => {
 };
 
 /**
- * Obtiene los perfiles y renderiza la lista.
+ * Get data and render profiles on the page.
  * @async
  * @function getData
- * @returns {Promise<void>} No devuelve ningún valor explícito.
+ * @returns {Promise<void>} Does not return any explicit value.
  */
 const getData = async () => {
   renderProfiles(await getProfiles());
