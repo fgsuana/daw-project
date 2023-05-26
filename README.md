@@ -2,6 +2,8 @@
 
 __Joel, Ángel, Giancarlo__
 
+![Autores](https://www.itcmadi.com/devmatch1/blog/wp-content/uploads/2023/05/rr-removebg-preview.png)
+
 # DESCRIPCIÓN
 
 __DevMatch__ es una plataforma orientada a perfiles IT, cuyo objetivo es reunir talento en un determinado proyecto. Podrás desarrollar proyectos con personas especializadas en una rama concreta (Front-End, Back-End, SEO, Análisis de datos, Big Query...)
